@@ -2914,7 +2914,7 @@
 		(uuid "fc7e4a54-2cf1-485c-9de5-89c81e3cf799")
 	)
 	(image
-		(at 44.45 170.18)
+		(at 46.99 161.29)
 		(uuid "35aec5dc-59c1-417d-97fb-9e5c5db7e7ae")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAmoAAAJBCAIAAAB52w7dAAAAA3NCSVQICAjb4U/gAAAgAElEQVR4"
 			"nOydd1wTyf//JyGhExCkhiKoIDZEFPE4CxawYQOVoiLgiQ08VLAiip6K3oFYUQEVFPT0VBQLFrCh"
@@ -5284,7 +5284,7 @@
 		)
 		(uuid "1e9e41f9-9876-4e3f-9e8f-e1df837ce473")
 	)
-	(hierarchical_label "CAN_RX"
+	(hierarchical_label "BT_RX"
 		(shape input)
 		(at 114.3 92.71 180)
 		(effects
@@ -5471,7 +5471,7 @@
 		)
 		(uuid "9d8abea7-37d8-4f29-a801-c2dc041e440e")
 	)
-	(hierarchical_label "CAN_TX"
+	(hierarchical_label "BT_TX"
 		(shape output)
 		(at 114.3 95.25 180)
 		(effects

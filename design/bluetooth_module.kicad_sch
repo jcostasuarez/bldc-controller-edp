@@ -1,0 +1,32 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "1624d21b-acae-4320-ac0e-85fc3603140e")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "BT_MODULE_TX"
+		(shape output)
+		(at 95.25 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "7e91f2c1-5786-4362-823c-44f6b7966b77")
+	)
+	(hierarchical_label "BT_MODULE_RX"
+		(shape input)
+		(at 95.25 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify right)
+		)
+		(uuid "99010388-08ff-4de2-add1-aecd4bfed1dd")
+	)
+)
