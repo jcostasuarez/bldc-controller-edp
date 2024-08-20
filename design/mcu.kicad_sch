@@ -1831,12 +1831,44 @@
 		(uuid "f8f42c00-e8b7-436c-b798-927ee927d870")
 	)
 	(no_connect
+		(at 121.92 80.01)
+		(uuid "032d4244-a00c-4681-bcdd-c9073259e712")
+	)
+	(no_connect
+		(at 121.92 82.55)
+		(uuid "08d42135-ac0b-4e89-a514-f6d65393d670")
+	)
+	(no_connect
+		(at 121.92 115.57)
+		(uuid "14e96ccf-eca4-4cad-b7c6-ab6d5d494688")
+	)
+	(no_connect
+		(at 121.92 41.91)
+		(uuid "2a175357-ef93-4ac9-a69d-eebd9445d762")
+	)
+	(no_connect
 		(at 185.42 49.53)
 		(uuid "36760254-8be3-40be-b87c-532b4ce1ac79")
 	)
 	(no_connect
+		(at 121.92 85.09)
+		(uuid "530eecf2-9d9e-4a1c-9d3c-0a2f7e16bdbe")
+	)
+	(no_connect
+		(at 121.92 44.45)
+		(uuid "588fce1b-528e-405d-94cb-4c4510570138")
+	)
+	(no_connect
+		(at 121.92 49.53)
+		(uuid "59c4f91c-bcd4-4e16-aa9e-725c55862b59")
+	)
+	(no_connect
 		(at 185.42 68.58)
 		(uuid "962855ed-052d-468a-ac16-f467439e9182")
+	)
+	(no_connect
+		(at 121.92 87.63)
+		(uuid "bd38c37c-79a0-47b4-a8b1-0ccc4cf4b896")
 	)
 	(no_connect
 		(at 185.42 31.75)
@@ -1847,8 +1879,16 @@
 		(uuid "d59d1b6f-7902-4dad-8318-af621e817bfe")
 	)
 	(no_connect
+		(at 121.92 46.99)
+		(uuid "e0f6552e-deb1-4d72-9bb5-c4b4d3530231")
+	)
+	(no_connect
 		(at 185.42 34.29)
 		(uuid "f1c4891e-42bc-426d-8410-e157d592c8c1")
+	)
+	(no_connect
+		(at 121.92 74.93)
+		(uuid "f28f4550-8e44-441c-956a-a82c45f5267d")
 	)
 	(wire
 		(pts
@@ -4470,18 +4510,6 @@
 		)
 		(uuid "0b678e6a-ad46-4572-9354-8e47212505b6")
 	)
-	(hierarchical_label "RX_SDA_NSS"
-		(shape bidirectional)
-		(at 121.92 41.91 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "175e380d-b370-4beb-859e-b27e4811c0bc")
-	)
 	(hierarchical_label "ADC_TEMP"
 		(shape input)
 		(at 121.92 39.37 180)
@@ -4518,18 +4546,6 @@
 		)
 		(uuid "250e13a4-9c24-4723-8f03-21fbc45500f7")
 	)
-	(hierarchical_label "MISO_ADC_EXT2"
-		(shape input)
-		(at 121.92 46.99 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2ad77482-ad9f-4393-a94a-b189ad7a5fb6")
-	)
 	(hierarchical_label "AN_IN"
 		(shape input)
 		(at 121.92 110.49 180)
@@ -4553,30 +4569,6 @@
 			(justify right)
 		)
 		(uuid "31389d2e-29a0-44ea-9751-083762b06914")
-	)
-	(hierarchical_label "SERVO"
-		(shape output)
-		(at 121.92 74.93 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "359373f6-d927-4b8f-9701-eb1fffb9afed")
-	)
-	(hierarchical_label "SCK_ADC_EXT"
-		(shape input)
-		(at 121.92 44.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "392181ac-6e7f-4a35-a6d7-b9e0f5dbae93")
 	)
 	(hierarchical_label "PB4"
 		(shape input)
@@ -4638,18 +4630,6 @@
 		)
 		(uuid "5523b9e5-6210-40a0-9481-c7eca7fb49cf")
 	)
-	(hierarchical_label "TX_SCL_MOSI"
-		(shape output)
-		(at 121.92 85.09 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "570ec24f-f637-4451-8452-34323d19d27a")
-	)
 	(hierarchical_label "SWDIO"
 		(shape input)
 		(at 185.42 63.5 0)
@@ -4698,18 +4678,6 @@
 		)
 		(uuid "765aefec-0d3c-425a-89c5-6fb6eb37c998")
 	)
-	(hierarchical_label "TX_SCL_MOSI"
-		(shape output)
-		(at 121.92 49.53 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "76edfbe7-f3c7-43c2-a29b-2a37acec39d9")
-	)
 	(hierarchical_label "SWCLK"
 		(shape input)
 		(at 185.42 66.04 0)
@@ -4733,18 +4701,6 @@
 			(justify right)
 		)
 		(uuid "7feac2bf-00ce-49c9-a653-8f91766f6fc4")
-	)
-	(hierarchical_label "RX_SDA_NSS"
-		(shape bidirectional)
-		(at 121.92 87.63 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8f8c2eba-5520-46c2-9be9-af4bb9976489")
 	)
 	(hierarchical_label "TEMP_MOTOR"
 		(shape input)
@@ -4805,18 +4761,6 @@
 			(justify right)
 		)
 		(uuid "b184326f-c0c9-43d7-88b1-3ffe20065956")
-	)
-	(hierarchical_label "CAN_TX"
-		(shape output)
-		(at 121.92 82.55 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b33f9c65-ce60-4d9e-8e0d-9e7798533c10")
 	)
 	(hierarchical_label "EN_GATE"
 		(shape output)
@@ -4926,18 +4870,6 @@
 		)
 		(uuid "d5b998cc-9d91-4265-94da-86c9f401966a")
 	)
-	(hierarchical_label "ADC_15"
-		(shape input)
-		(at 121.92 115.57 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d5ec01d0-5daa-4033-8c1b-7ccefc5bb5ef")
-	)
 	(hierarchical_label "HALL_1"
 		(shape input)
 		(at 121.92 118.11 180)
@@ -4961,18 +4893,6 @@
 			(justify right)
 		)
 		(uuid "dec63812-9ff3-4cd7-b24b-2ced77de46b6")
-	)
-	(hierarchical_label "CAN_RX"
-		(shape input)
-		(at 121.92 80.01 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "f20c8c0c-84cc-4285-9d89-874bb6102538")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
