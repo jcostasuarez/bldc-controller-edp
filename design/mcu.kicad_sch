@@ -4992,7 +4992,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15p"
+		(property "Value" "15pF"
 			(at 195.58 36.83 0)
 			(effects
 				(font
@@ -5061,7 +5061,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15p"
+		(property "Value" "15pF"
 			(at 217.17 36.83 0)
 			(effects
 				(font
@@ -5260,7 +5260,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "100nF"
 			(at 201.93 63.5 0)
 			(effects
 				(font
@@ -5654,7 +5654,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 204.47 129.54 0)
 			(effects
 				(font
@@ -5723,7 +5723,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 213.36 129.54 0)
 			(effects
 				(font
@@ -5856,7 +5856,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 195.58 142.24 0)
 			(effects
 				(font
@@ -5923,7 +5923,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 195.58 148.59 0)
 			(effects
 				(font
@@ -6375,7 +6375,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 251.46 49.53 0)
 			(effects
 				(font
@@ -6444,7 +6444,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 259.08 49.53 0)
 			(effects
 				(font
@@ -6513,7 +6513,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 265.43 49.53 0)
 			(effects
 				(font
@@ -6582,7 +6582,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 271.78 49.53 0)
 			(effects
 				(font

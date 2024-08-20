@@ -3328,7 +3328,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7R"
+		(property "Value" "4.7Ω"
 			(at 154.94 36.83 90)
 			(effects
 				(font
@@ -3396,7 +3396,7 @@
 				)
 			)
 		)
-		(property "Value" "0.0005R"
+		(property "Value" "0.0005Ω"
 			(at 129.54 50.8 90)
 			(effects
 				(font
@@ -3464,7 +3464,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7R"
+		(property "Value" "4.7Ω"
 			(at 156.21 77.47 90)
 			(effects
 				(font
@@ -3533,7 +3533,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "4.7u_100v"
+		(property "Value" "4.7u"
 			(at 179.07 64.7762 0)
 			(effects
 				(font
@@ -3542,7 +3542,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 181.61 63.5 0)
 			(effects
 				(font
@@ -3560,7 +3560,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 100V X7R 1210"
 			(at 181.61 63.5 0)
 			(effects
 				(font
@@ -3603,7 +3603,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u_100v"
+		(property "Value" "4.7u"
 			(at 193.04 64.7762 0)
 			(effects
 				(font
@@ -3612,7 +3612,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 190.5 63.5 0)
 			(effects
 				(font
@@ -3630,7 +3630,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 100V X7R 1210"
 			(at 190.5 63.5 0)
 			(effects
 				(font
@@ -3672,7 +3672,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 129.5336 86.36 90)
 			(effects
 				(font
@@ -3962,7 +3962,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7R"
+		(property "Value" "4.7Ω"
 			(at 60.96 38.1 90)
 			(effects
 				(font
@@ -4030,7 +4030,7 @@
 				)
 			)
 		)
-		(property "Value" "0.0005R"
+		(property "Value" "0.0005Ω"
 			(at 35.56 52.07 90)
 			(effects
 				(font
@@ -4098,7 +4098,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7R"
+		(property "Value" "4.7Ω"
 			(at 62.23 78.74 90)
 			(effects
 				(font
@@ -4167,7 +4167,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "4.7u_100v"
+		(property "Value" "4.7u"
 			(at 85.09 66.0462 0)
 			(effects
 				(font
@@ -4176,7 +4176,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 87.63 64.77 0)
 			(effects
 				(font
@@ -4194,7 +4194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 100V X7R 1210"
 			(at 87.63 64.77 0)
 			(effects
 				(font
@@ -4237,7 +4237,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u_100v"
+		(property "Value" "4.7u"
 			(at 99.06 66.0462 0)
 			(effects
 				(font
@@ -4246,7 +4246,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 96.52 64.77 0)
 			(effects
 				(font
@@ -4264,7 +4264,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 100V X7R 1210"
 			(at 96.52 64.77 0)
 			(effects
 				(font
@@ -4306,7 +4306,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 35.5536 87.63 90)
 			(effects
 				(font
@@ -4596,7 +4596,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7R"
+		(property "Value" "4.7Ω"
 			(at 242.57 38.1 90)
 			(effects
 				(font
@@ -4664,7 +4664,7 @@
 				)
 			)
 		)
-		(property "Value" "0.0005R"
+		(property "Value" "0.0005Ω"
 			(at 217.17 52.07 90)
 			(effects
 				(font
@@ -4732,7 +4732,7 @@
 				)
 			)
 		)
-		(property "Value" "4.7R"
+		(property "Value" "4.7Ω"
 			(at 243.84 78.74 90)
 			(effects
 				(font
@@ -4801,7 +4801,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "4.7u_100v"
+		(property "Value" "4.7u"
 			(at 266.7 54.6162 0)
 			(effects
 				(font
@@ -4810,7 +4810,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 269.24 53.34 0)
 			(effects
 				(font
@@ -4828,7 +4828,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 100V X7R 1210"
 			(at 269.24 53.34 0)
 			(effects
 				(font
@@ -4870,7 +4870,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7u_100v"
+		(property "Value" "4.7u"
 			(at 267.97 66.04 0)
 			(effects
 				(font
@@ -4879,7 +4879,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
 			(at 278.13 64.77 0)
 			(effects
 				(font
@@ -4897,7 +4897,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 4.7UF 100V X7R 1210"
 			(at 278.13 64.77 0)
 			(effects
 				(font
@@ -4939,7 +4939,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 217.1636 87.63 90)
 			(effects
 				(font
@@ -5206,7 +5206,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "100Ω"
 			(at 77.47 133.35 90)
 			(effects
 				(font
@@ -5274,7 +5274,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "100Ω"
 			(at 77.47 152.4 90)
 			(effects
 				(font
@@ -5342,7 +5342,7 @@
 				)
 			)
 		)
-		(property "Value" "100R"
+		(property "Value" "100Ω"
 			(at 77.47 171.45 90)
 			(effects
 				(font
@@ -5411,7 +5411,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7n"
+		(property "Value" "4.7nF"
 			(at 64.77 143.5162 0)
 			(effects
 				(font
@@ -5438,7 +5438,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0603 4.7NF 16V X7R 10%"
 			(at 62.23 142.24 0)
 			(effects
 				(font
@@ -5481,7 +5481,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7n"
+		(property "Value" "4.7nF"
 			(at 64.77 163.8362 0)
 			(effects
 				(font
@@ -5508,7 +5508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0603 4.7NF 16V X7R 10%"
 			(at 62.23 162.56 0)
 			(effects
 				(font
@@ -5551,7 +5551,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7n"
+		(property "Value" "4.7nF"
 			(at 64.77 181.6162 0)
 			(effects
 				(font
@@ -5578,7 +5578,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP CER 0603 4.7NF 16V X7R 10%"
 			(at 62.23 180.34 0)
 			(effects
 				(font
@@ -6040,7 +6040,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "10kΩ"
 			(at 144.78 154.9399 0)
 			(effects
 				(font
@@ -6110,7 +6110,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "NTC 10k"
+		(property "Value" "NTC 10kΩ"
 			(at 144.78 143.5099 0)
 			(effects
 				(font
@@ -6180,7 +6180,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2.2u"
+		(property "Value" "2.2uF"
 			(at 134.62 154.9462 0)
 			(effects
 				(font
@@ -6250,7 +6250,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "680u_63v"
+		(property "Value" "680uF"
 			(at 227.33 137.1662 0)
 			(effects
 				(font
@@ -6259,7 +6259,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 224.79 135.89 0)
 			(effects
 				(font
@@ -6277,7 +6277,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP ALUM 680UF 20% 80V"
 			(at 224.79 135.89 0)
 			(effects
 				(font
@@ -6320,7 +6320,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "680u_63v"
+		(property "Value" "680uF"
 			(at 242.57 137.1662 0)
 			(effects
 				(font
@@ -6329,7 +6329,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm"
 			(at 240.03 135.89 0)
 			(effects
 				(font
@@ -6347,7 +6347,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CAP ALUM 680UF 20% 80V"
 			(at 240.03 135.89 0)
 			(effects
 				(font
