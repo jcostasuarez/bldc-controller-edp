@@ -1,5 +1,8 @@
 (sym_lib_table
-  (version 0)
-  (lib (name "BLDC_4-rescue1")(type "Legacy")(uri "${KIPRJMOD}/BLDC_4-rescue.lib")(options "")(descr ""))
-  (lib (name "crf_11")(type "Legacy")(uri "${KIPRJMOD}/Libraries/crf_1.lib")(options "")(descr ""))
+  (version 7)
+  (lib (name "crf_1")(type "KiCad")(uri "${KIPRJMOD}/Libraries/bldc.kicad_sym")(options "")(descr ""))
+  (lib (name "crf_2")(type "KiCad")(uri "${KIPRJMOD}/Libraries/crf_2.kicad_sym")(options "")(descr ""))
+  (lib (name "bldc")(type "KiCad")(uri "${KIPRJMOD}/Libraries/bldc.kicad_sym")(options "")(descr ""))
+  (lib (name "ESCX-rescue")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ESCX-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "ESCX-cache")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ESCX-cache.kicad_sym")(options "")(descr ""))
 )

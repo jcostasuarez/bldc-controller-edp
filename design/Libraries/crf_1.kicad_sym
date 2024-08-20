@@ -23455,7 +23455,7 @@
 			)
 		)
 	)
-	(symbol "MCP16311/2"
+	(symbol "MCP16311_2"
 		(pin_names
 			(offset 1.016)
 		)
@@ -23470,7 +23470,7 @@
 				)
 			)
 		)
-		(property "Value" "MCP16311/2"
+		(property "Value" "MCP16311_2"
 			(at 0 -7.62 0)
 			(effects
 				(font
@@ -23503,7 +23503,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "MCP16311/2_0_1"
+		(symbol "MCP16311_2_0_1"
 			(rectangle
 				(start -7.62 6.35)
 				(end 7.62 -6.35)
@@ -23516,7 +23516,7 @@
 				)
 			)
 		)
-		(symbol "MCP16311/2_1_1"
+		(symbol "MCP16311_2_1_1"
 			(pin input line
 				(at -15.24 3.81 0)
 				(length 7.62)
@@ -24399,7 +24399,7 @@
 			)
 		)
 	)
-	(symbol "MEGA164P/324P/644P-AU"
+	(symbol "MEGA164P_324P_644P-AU"
 		(pin_names
 			(offset 1.016)
 		)
@@ -24415,7 +24415,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "MEGA164P/324P/644P-AU"
+		(property "Value" "MEGA164P_324P_644P-AU"
 			(at -20.32 -48.26 0)
 			(effects
 				(font
@@ -24457,7 +24457,7 @@
 				)
 			)
 		)
-		(symbol "MEGA164P/324P/644P-AU_1_0"
+		(symbol "MEGA164P_324P_644P-AU_1_0"
 			(polyline
 				(pts
 					(xy -20.32 -45.72) (xy -20.32 45.72)
@@ -24507,7 +24507,7 @@
 				)
 			)
 		)
-		(symbol "MEGA164P/324P/644P-AU_1_1"
+		(symbol "MEGA164P_324P_644P-AU_1_1"
 			(pin bidirectional line
 				(at 25.4 7.62 180)
 				(length 5.08)
@@ -25302,7 +25302,7 @@
 			)
 		)
 	)
-	(symbol "MEGA164P/324P/644P-PU"
+	(symbol "MEGA164P_324P_644P-PU"
 		(pin_names
 			(offset 1.016)
 		)
@@ -25318,7 +25318,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "MEGA164P/324P/644P-PU"
+		(property "Value" "MEGA164P_324P_644P-PU"
 			(at -20.32 -48.26 0)
 			(effects
 				(font
@@ -25361,7 +25361,7 @@
 				)
 			)
 		)
-		(symbol "MEGA164P/324P/644P-PU_1_0"
+		(symbol "MEGA164P_324P_644P-PU_1_0"
 			(polyline
 				(pts
 					(xy -20.32 -45.72) (xy -20.32 45.72)
@@ -25411,7 +25411,7 @@
 				)
 			)
 		)
-		(symbol "MEGA164P/324P/644P-PU_1_1"
+		(symbol "MEGA164P_324P_644P-PU_1_1"
 			(pin bidirectional line
 				(at 25.4 20.32 180)
 				(length 5.08)
@@ -26134,7 +26134,7 @@
 			)
 		)
 	)
-	(symbol "MEGA48/88/168-AU"
+	(symbol "MEGA48_88_168-AU"
 		(pin_names
 			(offset 1.016)
 		)
@@ -26150,7 +26150,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "MEGA48/88/168-AU"
+		(property "Value" "MEGA48_88_168-AU"
 			(at -25.4 -35.56 0)
 			(effects
 				(font
@@ -26193,7 +26193,7 @@
 				)
 			)
 		)
-		(symbol "MEGA48/88/168-AU_1_0"
+		(symbol "MEGA48_88_168-AU_1_0"
 			(polyline
 				(pts
 					(xy -25.4 -33.02) (xy -25.4 30.48)
@@ -26243,7 +26243,7 @@
 				)
 			)
 		)
-		(symbol "MEGA48/88/168-AU_1_1"
+		(symbol "MEGA48_88_168-AU_1_1"
 			(pin bidirectional line
 				(at 30.48 -2.54 180)
 				(length 5.08)
@@ -26822,7 +26822,7 @@
 			)
 		)
 	)
-	(symbol "MEGA48/88/168-PU"
+	(symbol "MEGA48_88_168-PU"
 		(pin_names
 			(offset 1.016)
 		)
@@ -26838,7 +26838,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "MEGA48/88/168-PU"
+		(property "Value" "MEGA48_88_168-PU"
 			(at -25.4 -35.56 0)
 			(effects
 				(font
@@ -26881,7 +26881,7 @@
 				)
 			)
 		)
-		(symbol "MEGA48/88/168-PU_1_0"
+		(symbol "MEGA48_88_168-PU_1_0"
 			(polyline
 				(pts
 					(xy -25.4 -33.02) (xy -25.4 30.48)
@@ -26931,7 +26931,7 @@
 				)
 			)
 		)
-		(symbol "MEGA48/88/168-PU_1_1"
+		(symbol "MEGA48_88_168-PU_1_1"
 			(pin bidirectional line
 				(at -30.48 27.94 0)
 				(length 5.08)
@@ -29644,6 +29644,378 @@
 				(at -2.54 -24.13 90)
 				(length 7.62)
 				(name "AD0/SDO"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+	)
+	(symbol "MPU9150"
+		(pin_names
+			(offset 1.016)
+		)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(property "Reference" "U"
+			(at 0 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MPU9150"
+			(at -1.27 -24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at -7.62 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -7.62 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 0 0 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(symbol "MPU9150_0_1"
+			(rectangle
+				(start -13.97 21.59)
+				(end 12.7 -22.86)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type none)
+				)
+			)
+		)
+		(symbol "MPU9150_1_1"
+			(pin input line
+				(at -16.51 7.62 0)
+				(length 2.54)
+				(name "CLKIN"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 16.51 0)
+				(length 2.54)
+				(name "REGOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -2.54 0)
+				(length 2.54)
+				(name "FSYNC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -5.08 0)
+				(length 2.54)
+				(name "INT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 11.43 180)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "13"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 -13.97 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "15"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 -16.51 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "17"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 -19.05 180)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "18"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 13.97 0)
+				(length 2.54)
+				(name "CPOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "20"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 5.08 0)
+				(length 2.54)
+				(name "CLKOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "22"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -15.24 0)
+				(length 2.54)
+				(name "SLI"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "23"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -17.78 0)
+				(length 2.54)
+				(name "SDA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "24"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 13.97 180)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -8.89 0)
+				(length 2.54)
+				(name "ES_DA"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 -11.43 0)
+				(length 2.54)
+				(name "ES_CL"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at 15.24 16.51 180)
+				(length 2.54)
+				(name "VLDGIC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -16.51 0 0)
+				(length 2.54)
+				(name "ADO"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -35048,7 +35420,7 @@
 			)
 		)
 	)
-	(symbol "RF2400-P/W"
+	(symbol "RF2400-P_W"
 		(pin_names
 			(offset 1.016)
 		)
@@ -35063,7 +35435,7 @@
 				)
 			)
 		)
-		(property "Value" "RF2400-P/W"
+		(property "Value" "RF2400-P_W"
 			(at 0 -10.16 0)
 			(effects
 				(font
@@ -35096,7 +35468,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "RF2400-P/W_0_1"
+		(symbol "RF2400-P_W_0_1"
 			(rectangle
 				(start -6.35 7.62)
 				(end 6.35 -7.62)
@@ -35109,7 +35481,7 @@
 				)
 			)
 		)
-		(symbol "RF2400-P/W_1_1"
+		(symbol "RF2400-P_W_1_1"
 			(pin power_in line
 				(at 13.97 -6.35 180)
 				(length 7.62)
@@ -40458,7 +40830,7 @@
 			)
 		)
 	)
-	(symbol "TDC_GP21/TDC_GP2"
+	(symbol "TDC_GP21_TDC_GP2"
 		(pin_names
 			(offset 1.016)
 		)
@@ -40473,7 +40845,7 @@
 				)
 			)
 		)
-		(property "Value" "TDC_GP21/TDC_GP2"
+		(property "Value" "TDC_GP21_TDC_GP2"
 			(at 0 0 0)
 			(effects
 				(font
@@ -40506,7 +40878,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "TDC_GP21/TDC_GP2_0_1"
+		(symbol "TDC_GP21_TDC_GP2_0_1"
 			(rectangle
 				(start -13.97 -35.56)
 				(end 17.78 25.4)
@@ -40519,7 +40891,7 @@
 				)
 			)
 		)
-		(symbol "TDC_GP21/TDC_GP2_1_1"
+		(symbol "TDC_GP21_TDC_GP2_1_1"
 			(pin input line
 				(at -21.59 -2.54 0)
 				(length 7.62)
@@ -41324,7 +41696,7 @@
 			)
 		)
 	)
-	(symbol "TJA1042TK/3"
+	(symbol "TJA1042TK_3"
 		(pin_names
 			(offset 1.016)
 		)
@@ -41339,7 +41711,7 @@
 				)
 			)
 		)
-		(property "Value" "TJA1042TK/3"
+		(property "Value" "TJA1042TK_3"
 			(at 0 -8.89 0)
 			(effects
 				(font
@@ -41372,7 +41744,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "TJA1042TK/3_0_1"
+		(symbol "TJA1042TK_3_0_1"
 			(rectangle
 				(start -7.62 6.35)
 				(end 7.62 -6.35)
@@ -41385,7 +41757,7 @@
 				)
 			)
 		)
-		(symbol "TJA1042TK/3_1_1"
+		(symbol "TJA1042TK_3_1_1"
 			(pin input line
 				(at -15.24 3.81 0)
 				(length 7.62)
