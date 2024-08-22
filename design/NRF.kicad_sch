@@ -3764,7 +3764,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 173.1518 54.0258 0)
 			(effects
 				(font
@@ -4101,7 +4101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 132.5118 36.2458 0)
 			(effects
 				(font
@@ -4296,7 +4296,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 132.5118 102.2858 0)
 			(effects
 				(font

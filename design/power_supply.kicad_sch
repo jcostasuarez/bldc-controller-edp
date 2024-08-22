@@ -1,0 +1,13 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "8224ece6-66bf-47bb-ab0b-7dbe1c9f7464")
+	(paper "A4")
+	(title_block
+		(title "bldc-controller-edp")
+		(date "2024-08-20")
+		(rev "1.0")
+	)
+	(lib_symbols)
+)

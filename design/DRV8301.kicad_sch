@@ -2546,7 +2546,7 @@
 		(uuid "07ec088f-db1a-4b16-a705-db79a8236157")
 	)
 	(junction
-		(at 233.68 83.82)
+		(at 247.65 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0c14b363-9cce-4a7b-9549-64b71a716d2f")
@@ -2907,7 +2907,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 88.9) (xy 233.68 83.82)
+			(xy 247.65 77.47) (xy 247.65 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3257,7 +3257,7 @@
 	)
 	(wire
 		(pts
-			(xy 254 88.9) (xy 256.54 88.9)
+			(xy 267.97 77.47) (xy 270.51 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3417,7 +3417,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 88.9) (xy 233.68 88.9)
+			(xy 260.35 77.47) (xy 247.65 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3567,7 +3567,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 83.82) (xy 236.22 83.82)
+			(xy 247.65 72.39) (xy 250.19 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3687,7 +3687,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 83.82) (xy 233.68 83.82)
+			(xy 240.03 72.39) (xy 247.65 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4237,7 +4237,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 83.82) (xy 254 83.82)
+			(xy 257.81 72.39) (xy 267.97 72.39)
 		)
 		(stroke
 			(width 0)
@@ -4595,7 +4595,7 @@
 	)
 	(hierarchical_label "SENS_SUPPLY"
 		(shape input)
-		(at 226.06 83.82 180)
+		(at 240.03 72.39 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4655,7 +4655,7 @@
 	)
 	(hierarchical_label "SUPPLY"
 		(shape input)
-		(at 254 83.82 0)
+		(at 267.97 72.39 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5349,10 +5349,10 @@
 		(lib_id "Device:C_Small")
 		(at 93.98 73.66 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005ae1f584")
 		(property "Reference" "C16"
@@ -6859,7 +6859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 172.72 54.6099 0)
 			(effects
 				(font
@@ -7111,7 +7111,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 240.03 83.82 270)
+		(at 254 72.39 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7119,7 +7119,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3d756")
 		(property "Reference" "R17"
-			(at 240.03 78.232 90)
+			(at 254 66.802 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7127,7 +7127,7 @@
 			)
 		)
 		(property "Value" "39kΩ"
-			(at 240.03 80.01 90)
+			(at 254 68.58 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7135,7 +7135,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 239.776 84.836 90)
+			(at 253.746 73.406 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7144,7 +7144,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 240.03 83.82 0)
+			(at 254 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7153,7 +7153,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 240.03 83.82 0)
+			(at 254 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7178,7 +7178,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 250.19 88.9 270)
+		(at 264.16 77.47 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7186,7 +7186,7 @@
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005ae3d7ca")
 		(property "Reference" "R22"
-			(at 250.19 92.71 90)
+			(at 264.16 81.28 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7194,7 +7194,7 @@
 			)
 		)
 		(property "Value" "2k2Ω"
-			(at 250.19 94.742 90)
+			(at 264.16 83.312 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7202,7 +7202,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 249.936 89.916 90)
+			(at 263.906 78.486 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7211,7 +7211,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 250.19 88.9 0)
+			(at 264.16 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7220,7 +7220,7 @@
 			)
 		)
 		(property "Description" "R 2k2, 0603 "
-			(at 250.19 88.9 0)
+			(at 264.16 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7649,7 +7649,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 256.54 88.9 0)
+		(at 270.51 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7658,7 +7658,7 @@
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005ae40cfb")
 		(property "Reference" "#PWR053"
-			(at 256.54 95.25 0)
+			(at 270.51 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7667,7 +7667,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 256.54 93.98 0)
+			(at 270.51 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7675,7 +7675,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 256.54 88.9 0)
+			(at 270.51 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7684,7 +7684,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 256.54 88.9 0)
+			(at 270.51 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7693,7 +7693,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 256.54 88.9 0)
+			(at 270.51 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8268,7 +8268,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 133.35 137.16 0)
 			(effects
 				(font
@@ -8552,12 +8552,13 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/product/es-mx/DRV8301"
 			(at 142.24 72.39 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
+				(hide yes)
 			)
 		)
 		(property "Description" ""

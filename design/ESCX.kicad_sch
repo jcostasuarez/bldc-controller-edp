@@ -3419,7 +3419,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 106.6799 72.39 90)
 			(effects
 				(font
@@ -3715,7 +3715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 45.72 52.07 0)
 			(effects
 				(font
@@ -4115,7 +4115,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 46.99 182.8799 90)
 			(effects
 				(font
@@ -4530,7 +4530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 96.52 125.7299 90)
 			(effects
 				(font
@@ -5140,7 +5140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 179.07 127 0)
 			(effects
 				(font
@@ -5206,7 +5206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VCC"
+		(property "Value" "+3.3V"
 			(at 182.88 100.33 0)
 			(effects
 				(font
@@ -6552,6 +6552,44 @@
 			(project "ESCX"
 				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 236.22 113.03)
+		(size 29.21 20.32)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "beee6ed1-bb89-4923-9abb-d3c29a126ceb")
+		(property "Sheetname" "power_supply"
+			(at 236.22 112.3184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_supply.kicad_sch"
+			(at 236.22 133.9346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "ESCX"
+				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a"
+					(page "6")
 				)
 			)
 		)

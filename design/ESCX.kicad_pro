@@ -627,6 +627,10 @@
     [
       "00000000-0000-0000-0000-00005ae14a7c",
       "power"
+    ],
+    [
+      "beee6ed1-bb89-4923-9abb-d3c29a126ceb",
+      "power_supply"
     ]
   ],
   "text_variables": {}
