@@ -3075,7 +3075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "R 2k2, 0603 "
+		(property "Description" "R 2k2, 0603"
 			(at 83.82 78.74 0)
 			(effects
 				(font
@@ -3143,7 +3143,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "R 2k2, 0603 "
+		(property "Description" "R 2k2, 0603"
 			(at 73.66 76.2 0)
 			(effects
 				(font
@@ -3211,7 +3211,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "R 2k2, 0603 "
+		(property "Description" "R 2k2, 0603"
 			(at 64.77 73.66 0)
 			(effects
 				(font
@@ -4661,7 +4661,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LED Blue, 0603 "
+		(property "Description" "LED Blue, 0603"
 			(at 179.07 138.43 0)
 			(effects
 				(font
@@ -4729,7 +4729,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "LED Red, 0603 "
+		(property "Description" "LED Red, 0603"
 			(at 187.96 148.59 0)
 			(effects
 				(font
@@ -5258,7 +5258,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" "~"
 			(at 81.28 36.83 0)
 			(effects
 				(font

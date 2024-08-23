@@ -2646,7 +2646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP 15p, 100V, 0603 "
+		(property "Description" "CAP 15p, 100V, 0603"
 			(at 170.18 109.22 0)
 			(effects
 				(font
@@ -2713,7 +2713,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP 15p, 100V, 0603 "
+		(property "Description" "CAP 15p, 100V, 0603"
 			(at 170.18 124.46 0)
 			(effects
 				(font
@@ -3030,7 +3030,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 182.88 80.01 0)
 			(effects
 				(font
@@ -3098,7 +3098,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 195.58 73.66 0)
 			(effects
 				(font
@@ -3166,7 +3166,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 196.85 86.36 0)
 			(effects
 				(font
@@ -4380,7 +4380,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" " ~"
+		(property "Datasheet" "~"
 			(at 238.76 73.66 0)
 			(effects
 				(font

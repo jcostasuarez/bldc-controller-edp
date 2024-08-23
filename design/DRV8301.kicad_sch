@@ -7044,7 +7044,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 248.92 34.29 0)
 			(effects
 				(font
@@ -7062,7 +7062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "LED"
 			(at 248.92 34.29 0)
 			(effects
 				(font
@@ -7196,7 +7196,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "R 2k2, 0603 "
+		(property "Description" "R 2k2, 0603"
 			(at 250.19 88.9 0)
 			(effects
 				(font
@@ -7330,7 +7330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "R 2k2, 0603 "
+		(property "Description" "R 2k2, 0603"
 			(at 250.19 106.68 0)
 			(effects
 				(font
@@ -7465,7 +7465,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "R 2k2, 0603 "
+		(property "Description" "R 2k2, 0603"
 			(at 250.19 121.92 0)
 			(effects
 				(font
@@ -7600,7 +7600,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "R 2k2, 0603 "
+		(property "Description" "R 2k2, 0603"
 			(at 240.03 147.32 0)
 			(effects
 				(font
@@ -8820,7 +8820,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Diode_SMD:D_SMA"
 			(at 187.96 54.61 0)
 			(effects
 				(font
@@ -8838,7 +8838,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Shottky 60V 2A "
+		(property "Description" "Shottky 60V 2A"
 			(at 187.96 54.61 0)
 			(effects
 				(font
@@ -8888,7 +8888,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
 			(at 194.31 50.8 0)
 			(effects
 				(font
@@ -8956,7 +8956,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "crf1:MF05A"
 			(at 101.6 149.86 0)
 			(effects
 				(font

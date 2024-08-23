@@ -4939,7 +4939,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP 15p, 100V, 0603 "
+		(property "Description" "CAP 15p, 100V, 0603"
 			(at 195.58 34.29 0)
 			(effects
 				(font
@@ -5008,7 +5008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP 15p, 100V, 0603 "
+		(property "Description" "CAP 15p, 100V, 0603"
 			(at 215.9 34.29 0)
 			(effects
 				(font
