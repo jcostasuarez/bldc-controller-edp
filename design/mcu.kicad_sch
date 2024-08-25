@@ -4948,6 +4948,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 195.58 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10C150JB8NNNC"
+			(at 195.58 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "77221236-b85c-438e-b690-a06bec6c34e6")
 		)
@@ -5009,6 +5027,24 @@
 			)
 		)
 		(property "Description" "CAP 15p, 100V, 0603"
+			(at 215.9 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 215.9 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10C150JB8NNNC"
 			(at 215.9 34.29 0)
 			(effects
 				(font
@@ -5208,6 +5244,24 @@
 			)
 		)
 		(property "Description" "CAP 100n, 50V, 0603"
+			(at 199.39 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 199.39 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CC0603KRX7R9BB104"
 			(at 199.39 60.96 0)
 			(effects
 				(font
@@ -5610,6 +5664,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 201.93 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10A225KO8NNNC"
+			(at 201.93 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7f564bdb-6e12-4d29-b7de-8795441a225a")
 		)
@@ -5671,6 +5743,24 @@
 			)
 		)
 		(property "Description" "CAP 2.2u, 16V, 0603"
+			(at 210.82 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 210.82 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10A225KO8NNNC"
 			(at 210.82 129.54 0)
 			(effects
 				(font
@@ -5811,6 +5901,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 198.12 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10A225KO8NNNC"
+			(at 198.12 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "694cb0e2-3d02-435e-9676-0113baa42e9e")
 		)
@@ -5870,6 +5978,24 @@
 			)
 		)
 		(property "Description" "CAP 2.2u, 16V, 0603"
+			(at 198.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 198.12 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10A225KO8NNNC"
 			(at 198.12 146.05 0)
 			(effects
 				(font
@@ -6331,6 +6457,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 250.19 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10A225KO8NNNC"
+			(at 250.19 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "973b7335-428f-4e9c-b0e4-e4e9b0e5675d")
 		)
@@ -6392,6 +6536,24 @@
 			)
 		)
 		(property "Description" "CAP 2.2u, 16V, 0603"
+			(at 257.81 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 257.81 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10A225KO8NNNC"
 			(at 257.81 46.99 0)
 			(effects
 				(font
@@ -6469,6 +6631,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 264.16 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10A225KO8NNNC"
+			(at 264.16 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a17a3363-f965-4d6f-bcf4-d6999f057621")
 		)
@@ -6530,6 +6710,24 @@
 			)
 		)
 		(property "Description" "CAP 2.2u, 16V, 0603"
+			(at 270.51 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 270.51 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10A225KO8NNNC"
 			(at 270.51 46.99 0)
 			(effects
 				(font
