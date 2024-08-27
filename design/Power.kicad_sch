@@ -3444,6 +3444,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 153.67 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-074R7L"
+			(at 153.67 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "afc6bcc2-75f0-4328-ba9b-4759325b3b17")
 		)
@@ -3485,7 +3503,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 129.286 55.626 90)
 			(effects
 				(font
@@ -3504,6 +3522,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 129.54 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 129.54 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CSNL2512FTL500"
 			(at 129.54 54.61 0)
 			(effects
 				(font
@@ -3572,6 +3608,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 156.21 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 156.21 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-074R7L"
 			(at 156.21 77.47 0)
 			(effects
 				(font
@@ -3650,6 +3704,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Holy Stone Enterprise Co., Ltd. "
+			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "C1210X475K101T"
+			(at 181.61 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "53251249-1846-4790-a8f8-600c33cbf712")
 		)
@@ -3712,6 +3784,24 @@
 			)
 		)
 		(property "Description" "CAP CER 4.7UF 100V X7R 1210"
+			(at 190.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Holy Stone Enterprise Co., Ltd. "
+			(at 190.5 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "C1210X475K101T"
 			(at 190.5 63.5 0)
 			(effects
 				(font
@@ -4010,6 +4100,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Analog Devices Inc."
+			(at 35.56 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "AD8418AWBRZ-RL"
+			(at 35.56 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "9c6a8df4-bcf1-4a27-a3b5-60b6a2cce700")
 		)
@@ -4096,6 +4204,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 57.15 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-074R7L"
+			(at 57.15 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42015fe1-1743-41f4-b90f-ad00fe447695")
 		)
@@ -4137,7 +4263,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 35.306 56.896 90)
 			(effects
 				(font
@@ -4156,6 +4282,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 35.56 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 35.56 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CSNL2512FTL500"
 			(at 35.56 55.88 0)
 			(effects
 				(font
@@ -4224,6 +4368,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 58.42 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 58.42 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-074R7L"
 			(at 58.42 78.74 0)
 			(effects
 				(font
@@ -4302,6 +4464,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Holy Stone Enterprise Co., Ltd. "
+			(at 87.63 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "C1210X475K101T"
+			(at 87.63 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f029629f-2ec7-4ea7-bcbf-1c3c2fdc0e20")
 		)
@@ -4364,6 +4544,24 @@
 			)
 		)
 		(property "Description" "CAP CER 4.7UF 100V X7R 1210"
+			(at 96.52 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Holy Stone Enterprise Co., Ltd. "
+			(at 96.52 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "C1210X475K101T"
 			(at 96.52 64.77 0)
 			(effects
 				(font
@@ -4662,6 +4860,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Analog Devices Inc."
+			(at 217.17 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "AD8418AWBRZ-RL"
+			(at 217.17 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "4"
 			(uuid "3042347e-1c46-4bdb-8bdd-01b2deb57582")
 		)
@@ -4748,6 +4964,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 242.57 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-074R7L"
+			(at 242.57 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c528329c-40ee-4909-b542-cec017b962ed")
 		)
@@ -4789,7 +5023,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 216.916 56.896 90)
 			(effects
 				(font
@@ -4808,6 +5042,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 217.17 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 217.17 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CSNL2512FTL500"
 			(at 217.17 55.88 0)
 			(effects
 				(font
@@ -4876,6 +5128,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 241.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 241.3 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-074R7L"
 			(at 241.3 76.2 0)
 			(effects
 				(font
@@ -4954,6 +5224,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Holy Stone Enterprise Co., Ltd. "
+			(at 269.24 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "C1210X475K101T"
+			(at 269.24 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "fbb8c3c7-dc6d-4182-92e6-ec95baa5f59b")
 		)
@@ -5015,6 +5303,24 @@
 			)
 		)
 		(property "Description" "CAP CER 4.7UF 100V X7R 1210"
+			(at 278.13 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Holy Stone Enterprise Co., Ltd. "
+			(at 278.13 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "C1210X475K101T"
 			(at 278.13 64.77 0)
 			(effects
 				(font
@@ -5376,6 +5682,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 77.47 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-07100RL"
+			(at 77.47 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7ae84b75-d5df-47d8-b302-1be8e518b454")
 		)
@@ -5444,6 +5768,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 77.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-07100RL"
+			(at 77.47 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2a9bd37e-ecd3-4500-8036-fe88668429f8")
 		)
@@ -5504,6 +5846,24 @@
 			)
 		)
 		(property "Description" "R 2k2, 0603"
+			(at 77.47 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 77.47 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-07100RL"
 			(at 77.47 175.26 0)
 			(effects
 				(font
@@ -5582,6 +5942,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
+			(at 62.23 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "0603B472K500NT"
+			(at 62.23 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c04fe0c5-81e3-41ae-ba48-fadd75f97ff2")
 		)
@@ -5644,6 +6022,24 @@
 			)
 		)
 		(property "Description" "CAP CER 0603 4.7NF 16V X7R 10%"
+			(at 62.23 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
+			(at 62.23 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "0603B472K500NT"
 			(at 62.23 162.56 0)
 			(effects
 				(font
@@ -5722,6 +6118,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
+			(at 62.23 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "0603B472K500NT"
+			(at 62.23 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "8d1481be-b486-4d9b-a422-dab5014662da")
 		)
@@ -5785,6 +6199,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 129.54 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Analog Devices Inc."
+			(at 129.54 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "AD8418AWBRZ-RL"
 			(at 129.54 72.39 0)
 			(effects
 				(font
@@ -6211,6 +6643,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 142.24 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-0710KL"
+			(at 142.24 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "edf83e17-3ada-415d-9ccf-ac45e7842da8")
 		)
@@ -6273,6 +6723,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 142.24 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TDK Corporation"
+			(at 142.24 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "NTCG164BH103JT1"
 			(at 142.24 142.24 0)
 			(effects
 				(font
@@ -6976,6 +7444,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "IRF7854TRPBF"
+			(at 55.88 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "acd79539-a8ab-4aa9-afb0-ea86189e43cf")
 		)
@@ -7043,6 +7529,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 55.88 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 55.88 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "IRF7854TRPBF"
 			(at 55.88 77.47 0)
 			(effects
 				(font
@@ -7126,6 +7630,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 149.86 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "IRF7854TRPBF"
+			(at 149.86 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "194880a6-f67a-45e5-89fb-065dfbe7154c")
 		)
@@ -7193,6 +7715,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 149.86 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 149.86 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "IRF7854TRPBF"
 			(at 149.86 76.2 0)
 			(effects
 				(font
@@ -7276,6 +7816,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 237.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "IRF7854TRPBF"
+			(at 237.49 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "e4e812e3-54c8-4c54-be1c-0aeffbb229aa")
 		)
@@ -7343,6 +7901,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 237.49 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Infineon Technologies"
+			(at 237.49 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "IRF7854TRPBF"
 			(at 237.49 44.45 0)
 			(effects
 				(font

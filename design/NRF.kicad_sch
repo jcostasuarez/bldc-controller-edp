@@ -2462,6 +2462,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Nordic Semiconductor ASA"
+			(at 146.05 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "NRF24L01P-R"
+			(at 146.05 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "321040e6-e32a-4cfc-a62b-6ad454d9970e")
 		)
@@ -3111,6 +3129,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 182.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "LQW18AS8N2G00D"
+			(at 182.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "62c89739-c6d0-4b9f-9fb9-03d37189cace")
 		)
@@ -3179,6 +3215,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" " KYOCERA AVX"
+			(at 195.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "LCCI0603S3N9GTAR"
+			(at 195.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "8ba4fa28-09e4-4a1f-8455-f3c1cd0518f8")
 		)
@@ -3239,6 +3293,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 196.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" " Pulse Electronics"
+			(at 196.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "BSCH001608082N7S00"
 			(at 196.85 86.36 0)
 			(effects
 				(font
@@ -3316,6 +3388,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
+			(at 193.04 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "0603B222K500NT"
+			(at 193.04 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9a312e48-ce84-4d0b-afba-4f9c4d35335b")
 		)
@@ -3377,6 +3467,24 @@
 			)
 		)
 		(property "Description" "CAP CER 0603 4.7PF 16V X7R 10%"
+			(at 203.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 203.2 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CL10C4R7BB8NNNC"
 			(at 203.2 97.79 0)
 			(effects
 				(font
@@ -3584,6 +3692,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "YAGEO"
+			(at 218.44 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "CC0603CRNPO8BN1R0"
+			(at 218.44 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e254612f-927a-4356-9311-bc87250604ae")
 		)
@@ -3643,6 +3769,24 @@
 			)
 		)
 		(property "Description" "CAP CER 0603 1.5PF 16V X7R 10%"
+			(at 210.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 210.82 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "AC0603BRNPO9BN1R5"
 			(at 210.82 73.66 0)
 			(effects
 				(font
@@ -4168,6 +4312,24 @@
 			)
 		)
 		(property "Description" ""
+			(at 154.94 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 154.94 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603JR-0722KL"
 			(at 154.94 54.61 0)
 			(effects
 				(font

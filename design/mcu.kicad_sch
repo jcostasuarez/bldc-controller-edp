@@ -6069,6 +6069,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" " STMicroelectronics"
+			(at 153.67 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "STM32F401RCT6TR"
+			(at 153.67 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0bcac762-8604-47b1-83ef-30d38a0ef70d")
 		)
