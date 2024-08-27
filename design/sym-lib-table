@@ -6,4 +6,5 @@
   (lib (name "ESCX-rescue")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ESCX-rescue.kicad_sym")(options "")(descr ""))
   (lib (name "ESCX-cache")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ESCX-cache.kicad_sym")(options "")(descr ""))
   (lib (name "IRF7854PbF")(type "KiCad")(uri "${KIPRJMOD}/Libraries/IRF7854PbF.kicad_sym")(options "")(descr ""))
+  (lib (name "HC-49/US")(type "KiCad")(uri "${KIPRJMOD}/Libraries/ABLS-16.000MHZ-B4-T.kicad_sym")(options "")(descr ""))
 )
