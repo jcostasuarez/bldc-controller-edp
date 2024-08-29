@@ -417,7 +417,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "ignore",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -436,7 +436,8 @@
       "crf_1",
       "crf_2",
       "bldc",
-      "ESCX-rescue"
+      "ESCX-rescue",
+      "ESCX-cache"
     ]
   },
   "meta": {
@@ -486,7 +487,6 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
