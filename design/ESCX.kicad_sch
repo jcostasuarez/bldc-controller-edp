@@ -931,16 +931,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 144.78) (xy 203.2 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3bb8cb32-9b20-4034-818a-8e39524cfe53")
-	)
-	(wire
-		(pts
 			(xy 217.17 152.4) (xy 217.17 148.59)
 		)
 		(stroke
@@ -971,7 +961,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 148.59) (xy 203.2 148.59)
+			(xy 191.77 148.59) (xy 201.93 148.59)
 		)
 		(stroke
 			(width 0)
@@ -998,6 +988,16 @@
 			(type default)
 		)
 		(uuid "53435a96-f1f8-4633-94a3-7b65d5aaadaf")
+	)
+	(wire
+		(pts
+			(xy 217.17 128.27) (xy 217.17 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "557008de-af66-4f17-9c3d-2ea3da7a4505")
 	)
 	(wire
 		(pts
@@ -1071,7 +1071,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 148.59) (xy 217.17 144.78)
+			(xy 217.17 135.89) (xy 217.17 138.43)
 		)
 		(stroke
 			(width 0)
@@ -1088,16 +1088,6 @@
 			(type default)
 		)
 		(uuid "740c06a5-8443-494a-98c9-f5d82097be42")
-	)
-	(wire
-		(pts
-			(xy 179.07 134.62) (xy 179.07 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "77dd656b-21da-4e6e-95dc-415bb31301e0")
 	)
 	(wire
 		(pts
@@ -1161,26 +1151,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 144.78) (xy 195.58 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8bdef5b0-b534-44be-b32c-9c0064bd0e25")
-	)
-	(wire
-		(pts
-			(xy 179.07 142.24) (xy 179.07 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c86e6a4-8c8b-40b7-8a31-0f5d45a6d05a")
-	)
-	(wire
-		(pts
 			(xy 172.72 64.77) (xy 187.96 64.77)
 		)
 		(stroke
@@ -1201,7 +1171,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 148.59) (xy 217.17 148.59)
+			(xy 209.55 148.59) (xy 217.17 148.59)
 		)
 		(stroke
 			(width 0)
@@ -1378,6 +1348,16 @@
 			(type default)
 		)
 		(uuid "e6bfc3ab-a735-4ead-90d1-da7218f5f5e1")
+	)
+	(wire
+		(pts
+			(xy 217.17 146.05) (xy 217.17 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f08a0238-0e88-4638-82a8-aa859f601511")
 	)
 	(wire
 		(pts
@@ -1742,193 +1722,6 @@
 			(project "ESCX"
 				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED_Filled")
-		(at 179.07 138.43 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00000000-0000-0000-0000-00005aec6db9")
-		(property "Reference" "D1"
-			(at 182.88 138.7474 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "LED_Filled"
-			(at 182.88 141.2874 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode, filled shape"
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "ROHM Semicon"
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Product Number " "SML-E13BC8TT86"
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 179.07 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5e8132e1-c3b4-4513-8768-e833a159c9a6")
-		)
-		(pin "2"
-			(uuid "b3367ae3-708b-4cf7-94ee-bd7fb8c9acad")
-		)
-		(instances
-			(project "ESCX"
-				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -2306,192 +2099,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 199.39 144.78 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00000000-0000-0000-0000-00005aec6ef9")
-		(property "Reference" "R1"
-			(at 199.39 138.43 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1kΩ"
-			(at 199.39 140.97 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 199.644 143.764 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Product Number " "RC0603FR-071KL"
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Availability" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Check_prices" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description_1" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MF" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MP" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Purchase-URL" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "SnapEDA_Link" ""
-			(at 199.39 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "25a91e8f-d1b0-459e-bf82-49d23d837cb4")
-		)
-		(pin "2"
-			(uuid "5d37e1bd-6577-4048-ade5-57a7519995d3")
-		)
-		(instances
-			(project "ESCX"
-				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 207.01 148.59 90)
+		(at 205.74 148.59 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2500,7 +2108,7 @@
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005aec6f8a")
 		(property "Reference" "R3"
-			(at 207.01 140.97 90)
+			(at 205.74 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2508,7 +2116,7 @@
 			)
 		)
 		(property "Value" "220Ω"
-			(at 207.01 143.51 90)
+			(at 205.74 144.78 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2516,7 +2124,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 207.264 147.574 90)
+			(at 205.994 147.574 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2525,7 +2133,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2534,7 +2142,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2543,7 +2151,7 @@
 			)
 		)
 		(property "Manufacturer" "YAGEO"
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2552,7 +2160,7 @@
 			)
 		)
 		(property "Manufacturer Product Number " "RC0603FR-07220RL"
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2561,7 +2169,7 @@
 			)
 		)
 		(property "Availability" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2570,7 +2178,7 @@
 			)
 		)
 		(property "Check_prices" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2579,7 +2187,7 @@
 			)
 		)
 		(property "Description_1" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2588,7 +2196,7 @@
 			)
 		)
 		(property "MANUFACTURER" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2597,7 +2205,7 @@
 			)
 		)
 		(property "MF" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2606,7 +2214,7 @@
 			)
 		)
 		(property "MP" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2615,7 +2223,7 @@
 			)
 		)
 		(property "Package" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2624,7 +2232,7 @@
 			)
 		)
 		(property "Price" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2633,7 +2241,7 @@
 			)
 		)
 		(property "Purchase-URL" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2642,7 +2250,7 @@
 			)
 		)
 		(property "STANDARD" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2651,7 +2259,7 @@
 			)
 		)
 		(property "SnapEDA_Link" ""
-			(at 207.01 148.59 0)
+			(at 205.74 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2879,11 +2487,12 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 217.17 162.56 0)
+			(at 219.71 158.7499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -2927,7 +2536,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 179.07 132.08 0)
+		(at 217.17 125.73 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2936,7 +2545,7 @@
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005aeec7e0")
 		(property "Reference" "#PWR03"
-			(at 179.07 135.89 0)
+			(at 217.17 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2945,15 +2554,16 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 179.07 127 0)
+			(at 219.71 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 179.07 132.08 0)
+			(at 217.17 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2962,7 +2572,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 179.07 132.08 0)
+			(at 217.17 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2971,7 +2581,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 179.07 132.08 0)
+			(at 217.17 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3057,9 +2667,384 @@
 			)
 		)
 	)
+	(symbol
+		(lib_id "Device:LED_Filled")
+		(at 217.17 132.08 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0b0808a7-82d7-4139-a2ab-134fb2859d90")
+		(property "Reference" "D1"
+			(at 220.98 132.3974 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED_Filled"
+			(at 220.98 134.9374 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode, filled shape"
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "ROHM Semicon"
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "SML-E13BC8TT86"
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 217.17 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1870870-812c-4f38-843d-731547a12c64")
+		)
+		(pin "2"
+			(uuid "0aafa670-cafc-45e7-a82f-476b67d500fc")
+		)
+		(instances
+			(project "ESCX"
+				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 217.17 142.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bee5c7ee-6282-4d29-b727-b929f20ac958")
+		(property "Reference" "R1"
+			(at 219.71 140.9699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1kΩ"
+			(at 219.71 143.5099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 216.154 141.986 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "YAGEO"
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RC0603FR-071KL"
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 217.17 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ced0d7e-6e22-477a-98fc-e65fc40b3137")
+		)
+		(pin "2"
+			(uuid "f9907d4f-10cd-4fcd-adf6-ad0a658cfb49")
+		)
+		(instances
+			(project "ESCX"
+				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
 	(sheet
 		(at 116.84 33.02)
 		(size 55.88 129.54)
+		(fields_autoplaced yes)
 		(stroke
 			(width 0)
 			(type solid)
@@ -3068,8 +3053,8 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "00000000-0000-0000-0000-00005ae146b2")
-		(property "Sheetname" "stm32f40x"
-			(at 116.84 31.75 0)
+		(property "Sheetname" "MCU"
+			(at 116.84 32.3084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3077,7 +3062,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "mcu.kicad_sch"
+		(property "Sheetfile" "MCU.kicad_sch"
 			(at 116.84 163.1446 0)
 			(effects
 				(font
@@ -3784,7 +3769,7 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 236.22 97.7396 0)
+			(at 236.22 98.3746 0)
 			(effects
 				(font
 					(size 1.27 1.27)

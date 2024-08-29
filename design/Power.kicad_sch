@@ -3621,13 +3621,13 @@
 	)
 	(hierarchical_label "SUPPLY"
 		(shape input)
-		(at 259.08 20.32 180)
+		(at 259.08 20.32 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "a4b6228c-f741-4860-b228-b99d59734b8a")
 	)
