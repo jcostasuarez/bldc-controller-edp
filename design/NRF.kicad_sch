@@ -2910,7 +2910,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005ae886cf")
-		(property "Reference" "C34"
+		(property "Reference" "C35"
 			(at 177.7936 102.87 90)
 			(effects
 				(font
@@ -3079,7 +3079,7 @@
 		(instances
 			(project "ESCX"
 				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a/00000000-0000-0000-0000-00005ae4952f"
-					(reference "C34")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -4662,7 +4662,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005ae8a9b2")
-		(property "Reference" "C36"
+		(property "Reference" "C34"
 			(at 175.26 64.7762 0)
 			(effects
 				(font
@@ -4833,7 +4833,7 @@
 		(instances
 			(project "ESCX"
 				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a/00000000-0000-0000-0000-00005ae4952f"
-					(reference "C36")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -5873,7 +5873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6bd2d4bc-8a54-46bb-800b-ebd5148e2bc2")
-		(property "Reference" "C35"
+		(property "Reference" "C36"
 			(at 179.0636 118.11 90)
 			(effects
 				(font
@@ -6042,7 +6042,7 @@
 		(instances
 			(project "ESCX"
 				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a/00000000-0000-0000-0000-00005ae4952f"
-					(reference "C35")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -6058,7 +6058,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a1e488f8-9d8b-4fb4-aeea-ce8abd30be8a")
-		(property "Reference" "R42"
+		(property "Reference" "R16"
 			(at 173.99 115.5699 0)
 			(effects
 				(font
@@ -6229,7 +6229,7 @@
 		(instances
 			(project "ESCX"
 				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a/00000000-0000-0000-0000-00005ae4952f"
-					(reference "R42")
+					(reference "R16")
 					(unit 1)
 				)
 			)
