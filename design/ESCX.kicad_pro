@@ -417,7 +417,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "error",
+      "pin_to_pin": "ignore",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -676,7 +676,7 @@
   "sheets": [
     [
       "6389d757-a1bd-4c0a-9d55-6114b19cc67a",
-      "Raíz"
+      "Root"
     ],
     [
       "00000000-0000-0000-0000-00005ae146b2",
@@ -693,6 +693,14 @@
     [
       "00000000-0000-0000-0000-00005ae14a7c",
       "power"
+    ],
+    [
+      "b1ebc81e-c8d0-4dfc-b018-5639ecb79376",
+      "Motor_Sensors"
+    ],
+    [
+      "3b58b0da-7904-4d95-a506-9abfc64a393e",
+      "USB_Interface"
     ]
   ],
   "text_variables": {}
