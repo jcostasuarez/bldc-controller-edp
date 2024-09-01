@@ -1934,6 +1934,24 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Global Connector Technology"
+			(at 92.71 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "USB4105-GF-A"
+			(at 92.71 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "B8"
 			(uuid "2613ca30-8286-497f-b4df-a4929a5c5338")
 		)
