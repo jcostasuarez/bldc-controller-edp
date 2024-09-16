@@ -5871,10 +5871,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6bd2d4bc-8a54-46bb-800b-ebd5148e2bc2")
 		(property "Reference" "C36"
-			(at 179.0636 118.11 90)
+			(at 181.61 118.872 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5882,7 +5881,7 @@
 			)
 		)
 		(property "Value" "22pF"
-			(at 179.0636 120.65 90)
+			(at 182.118 121.158 90)
 			(effects
 				(font
 					(size 1.27 1.27)
