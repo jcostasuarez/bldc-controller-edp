@@ -1,4 +1,4 @@
-24047234590175519
+24048961216690253
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -97173,6 +97173,13 @@ IRF7854PBF
 0
 8
 8
+crf1
+SO-8_INF_IRF7854
+
+IRF7854PBF 
+0
+8
+3
 crf1
 SO28_LP
 Module CMS SO 28 pins large

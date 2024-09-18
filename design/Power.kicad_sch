@@ -10488,7 +10488,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SO-8_INF"
+		(property "Footprint" "crf1:SO-8_INF_IRF7854"
 			(at 61.722 39.878 0)
 			(effects
 				(font
@@ -10680,7 +10680,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SO-8_INF"
+		(property "Footprint" "crf1:SO-8_INF_IRF7854"
 			(at 61.722 72.898 0)
 			(effects
 				(font
@@ -10872,7 +10872,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SO-8_INF"
+		(property "Footprint" "crf1:SO-8_INF_IRF7854"
 			(at 155.702 39.878 0)
 			(effects
 				(font
@@ -11064,7 +11064,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SO-8_INF"
+		(property "Footprint" "crf1:SO-8_INF_IRF7854"
 			(at 155.702 72.898 0)
 			(effects
 				(font
@@ -11256,7 +11256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SO-8_INF"
+		(property "Footprint" "crf1:SO-8_INF_IRF7854"
 			(at 244.602 70.358 0)
 			(effects
 				(font
@@ -11448,7 +11448,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SO-8_INF"
+		(property "Footprint" "crf1:SO-8_INF_IRF7854"
 			(at 244.602 39.878 0)
 			(effects
 				(font
