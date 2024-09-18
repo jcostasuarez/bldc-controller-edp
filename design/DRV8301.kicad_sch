@@ -3188,16 +3188,6 @@
 	)
 	(wire
 		(pts
-			(xy 248.92 38.1) (xy 248.92 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f00b013-9c46-4933-a52c-85ae8509f4f8")
-	)
-	(wire
-		(pts
 			(xy 91.44 147.32) (xy 93.98 147.32)
 		)
 		(stroke
@@ -4215,6 +4205,16 @@
 			(type default)
 		)
 		(uuid "f672fa4b-903a-47cf-a9a3-d9993f32c0ee")
+	)
+	(wire
+		(pts
+			(xy 248.92 45.72) (xy 248.92 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f95c3855-c8db-49f0-9fc4-0e308e1c171d")
 	)
 	(wire
 		(pts
@@ -9230,7 +9230,7 @@
 	)
 	(symbol
 		(lib_id "power:GND1")
-		(at 248.92 40.64 0)
+		(at 248.92 46.99 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9239,7 +9239,7 @@
 		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005ae3bb9a")
 		(property "Reference" "#PWR035"
-			(at 248.92 46.99 0)
+			(at 248.92 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9248,7 +9248,7 @@
 			)
 		)
 		(property "Value" "GND1"
-			(at 248.92 45.72 0)
+			(at 248.92 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9256,7 +9256,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 248.92 40.64 0)
+			(at 248.92 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9265,7 +9265,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 248.92 40.64 0)
+			(at 248.92 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9274,7 +9274,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 248.92 40.64 0)
+			(at 248.92 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13022,6 +13022,190 @@
 			(project "ESCX"
 				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a/00000000-0000-0000-0000-00005ae1478f"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 248.92 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7e211751-0cbd-49e9-b3a0-ab1857d71d9a")
+		(property "Reference" "R43"
+			(at 243.078 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "150Ω"
+			(at 245.11 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 249.936 42.164 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "CAL-CHIP ELECTRONICS, INC."
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Product Number " "RM06F1500CT"
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Availability" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description_1" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 248.92 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4c293df8-c970-4ffe-a794-238cb2500340")
+		)
+		(pin "2"
+			(uuid "f5e0332f-708a-4934-bd10-c8d16029443c")
+		)
+		(instances
+			(project "ESCX"
+				(path "/6389d757-a1bd-4c0a-9d55-6114b19cc67a/00000000-0000-0000-0000-00005ae1478f"
+					(reference "R43")
 					(unit 1)
 				)
 			)
