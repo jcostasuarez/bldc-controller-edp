@@ -3812,17 +3812,6 @@
 		)
 		(uuid "649c05a1-59bb-4b4a-bdea-0fbb1a0f0315")
 	)
-	(label "PH_A"
-		(at 34.29 163.83 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "6fd7d22a-65e0-4330-a258-fa9d8ccb00f9")
-	)
 	(label "C_A"
 		(at 132.08 140.97 0)
 		(fields_autoplaced yes)
@@ -3833,6 +3822,17 @@
 			(justify left bottom)
 		)
 		(uuid "75b6c534-9b8d-459b-b8c0-f16d8567eab8")
+	)
+	(label "PH_A"
+		(at 34.29 168.91 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7d7ba993-c489-4815-8fea-a1a31f13b673")
 	)
 	(label "PH_A"
 		(at 21.59 55.88 0)
@@ -3857,6 +3857,17 @@
 		(uuid "ac8a999d-a37c-4617-8474-d534ae3efe7d")
 	)
 	(label "PH_C"
+		(at 34.29 163.83 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b393e75c-aa9b-4438-8591-d370b63e671e")
+	)
+	(label "PH_C"
 		(at 204.47 55.88 0)
 		(fields_autoplaced yes)
 		(effects
@@ -3877,17 +3888,6 @@
 			(justify left bottom)
 		)
 		(uuid "be3ed11f-6a50-4246-aa31-7416bb9da48d")
-	)
-	(label "PH_C"
-		(at 34.29 168.91 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cf63972a-2200-45fd-81ec-5282cc351f48")
 	)
 	(label "C_C"
 		(at 208.28 73.66 180)
