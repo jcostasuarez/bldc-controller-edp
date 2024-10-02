@@ -2713,7 +2713,8 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 157.48 107.95 180)
+		(at 157.48 107.95 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2721,7 +2722,7 @@
 		(dnp no)
 		(uuid "e87d41b8-8e77-4a91-9564-a614b59c85c4")
 		(property "Reference" "R41"
-			(at 153.67 106.68 0)
+			(at 161.29 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2729,7 +2730,7 @@
 			)
 		)
 		(property "Value" "5.1KΩ"
-			(at 153.162 109.982 0)
+			(at 161.798 109.982 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2737,7 +2738,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 156.464 107.696 90)
+			(at 158.496 107.696 90)
 			(effects
 				(font
 					(size 1.27 1.27)
