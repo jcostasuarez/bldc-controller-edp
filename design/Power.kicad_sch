@@ -12305,7 +12305,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
 			(at 49.53 160.02 0)
 			(effects
 				(font
@@ -12372,7 +12372,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
 			(at 62.23 160.02 0)
 			(effects
 				(font
@@ -12571,7 +12571,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "TestPoint:TestPoint_Pad_D4.0mm"
 			(at 60.96 160.02 0)
 			(effects
 				(font
