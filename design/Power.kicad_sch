@@ -11921,7 +11921,7 @@
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
-		(on_board no)
+		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1755329f-62ce-48b0-832b-6aa3a435d929")
@@ -11941,7 +11941,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "NetTie:NetTie-2_SMD_Pad2.0mm"
 			(at 104.14 121.92 0)
 			(effects
 				(font
