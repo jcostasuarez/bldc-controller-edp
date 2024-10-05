@@ -9049,7 +9049,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND1"
+		(property "Value" "GND2"
 			(at 170.18 124.46 0)
 			(effects
 				(font

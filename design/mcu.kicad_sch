@@ -4791,7 +4791,7 @@
 		)
 		(uuid "c335e254-d854-4861-907b-6e8b4bb2ae0e")
 	)
-	(hierarchical_label "USB_DM"
+	(hierarchical_label "USB_DN"
 		(shape bidirectional)
 		(at 121.92 59.69 180)
 		(fields_autoplaced yes)

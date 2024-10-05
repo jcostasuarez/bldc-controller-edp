@@ -48,7 +48,7 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "min_clearance": 0.2
         }
       },
       "diff_pair_dimensions": [
@@ -56,6 +56,11 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 0.2,
+          "via_gap": 0.0,
+          "width": 0.342
         }
       ],
       "drc_exclusions": [],
@@ -184,6 +189,7 @@
         0.1778,
         0.2,
         0.254,
+        0.3,
         0.381,
         0.4,
         0.508,
@@ -192,7 +198,8 @@
         1.0,
         1.27,
         1.5,
-        3.0
+        3.0,
+        5.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -226,20 +233,16 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.3,
-          "drill": 0.2
-        },
-        {
           "diameter": 0.4,
-          "drill": 0.2
+          "drill": 0.3
         },
         {
-          "diameter": 0.7,
-          "drill": 0.2
+          "diameter": 0.5,
+          "drill": 0.3
         },
         {
-          "diameter": 0.7,
-          "drill": 0.4
+          "diameter": 0.6,
+          "drill": 0.3
         }
       ],
       "zones_allow_external_fillets": false
@@ -490,6 +493,23 @@
     "classes": [
       {
         "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.2,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.3,
+        "line_style": 0,
+        "microvia_diameter": 0.4,
+        "microvia_drill": 0.3,
+        "name": "Default",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -497,12 +517,46 @@
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
-        "name": "Default",
+        "name": "50Ohm_SE",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
         "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.3,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.3127,
+        "line_style": 0,
+        "microvia_diameter": 0.4,
+        "microvia_drill": 0.3,
+        "name": "90Ohm_DP",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.3127,
+        "via_diameter": 0.4,
+        "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.15,
+        "diff_pair_gap": 0.3,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.4,
+        "line_style": 0,
+        "microvia_diameter": 0.6,
+        "microvia_drill": 0.4,
+        "name": "Gates",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.4,
         "wire_width": 6
       }
     ],
@@ -511,7 +565,56 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "90Ohm_DP",
+        "pattern": "/MCU/USB_DN"
+      },
+      {
+        "netclass": "90Ohm_DP",
+        "pattern": "/MCU/USB_DP"
+      },
+      {
+        "netclass": "90Ohm_DP",
+        "pattern": "/USB_Interface/dn_usb"
+      },
+      {
+        "netclass": "90Ohm_DP",
+        "pattern": "/USB_Interface/dp_usb"
+      },
+      {
+        "netclass": "90Ohm_DP",
+        "pattern": "/USB_Interface/dusb-"
+      },
+      {
+        "netclass": "90Ohm_DP",
+        "pattern": "/USB_Interface/dusb+"
+      },
+      {
+        "netclass": "Gates",
+        "pattern": "/DRV8301/GH_A"
+      },
+      {
+        "netclass": "Gates",
+        "pattern": "/DRV8301/GH_B"
+      },
+      {
+        "netclass": "Gates",
+        "pattern": "/DRV8301/GH_C"
+      },
+      {
+        "netclass": "Gates",
+        "pattern": "/power/G3"
+      },
+      {
+        "netclass": "Gates",
+        "pattern": "/power/G2"
+      },
+      {
+        "netclass": "Gates",
+        "pattern": "/power/G1"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -674,7 +777,7 @@
       "filter_string": "",
       "group_symbols": true,
       "name": "",
-      "sort_asc": true,
+      "sort_asc": false,
       "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
