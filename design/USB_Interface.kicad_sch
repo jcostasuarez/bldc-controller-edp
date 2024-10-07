@@ -1729,7 +1729,7 @@
 		(dnp no)
 		(uuid "0f610ca7-211e-4b46-830a-8bdbd05db229")
 		(property "Reference" "R42"
-			(at 163.83 106.68 0)
+			(at 170.942 107.442 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1737,7 +1737,7 @@
 			)
 		)
 		(property "Value" "5.1KΩ"
-			(at 163.322 109.982 0)
+			(at 171.45 110.998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2744,7 +2744,7 @@
 		(dnp no)
 		(uuid "e87d41b8-8e77-4a91-9564-a614b59c85c4")
 		(property "Reference" "R41"
-			(at 161.29 106.68 0)
+			(at 154.432 107.188 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2752,7 +2752,7 @@
 			)
 		)
 		(property "Value" "5.1KΩ"
-			(at 161.798 109.982 0)
+			(at 153.67 110.236 0)
 			(effects
 				(font
 					(size 1.27 1.27)

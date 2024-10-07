@@ -3964,15 +3964,15 @@
 	(symbol
 		(lib_id "Device:C_Small")
 		(at 203.2 97.79 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "00000000-0000-0000-0000-00005ae89ffc")
 		(property "Reference" "C38"
-			(at 205.74 96.5262 0)
+			(at 200.66 96.5262 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3981,7 +3981,7 @@
 			)
 		)
 		(property "Value" "4.7pF"
-			(at 205.74 99.0662 0)
+			(at 200.66 99.0662 0)
 			(effects
 				(font
 					(size 1.27 1.27)
