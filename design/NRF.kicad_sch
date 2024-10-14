@@ -2993,7 +2993,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
+		(property "Manufacturer" "APV"
 			(at 182.88 80.01 0)
 			(effects
 				(font
@@ -3002,7 +3002,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LQW18AS8N2G00D"
+		(property "MPN" ""
+			(at 182.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C6364698"
 			(at 182.88 80.01 0)
 			(effects
 				(font
@@ -3079,7 +3088,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" " KYOCERA AVX"
+		(property "Manufacturer" " Sunlord"
 			(at 195.58 73.66 0)
 			(effects
 				(font
@@ -3088,7 +3097,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LCCI0603S3N9GTAR"
+		(property "MPN" ""
+			(at 195.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13818"
 			(at 195.58 73.66 0)
 			(effects
 				(font
@@ -3165,7 +3183,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" " Pulse Electronics"
+		(property "Manufacturer" "Murata"
 			(at 196.85 86.36 0)
 			(effects
 				(font
@@ -3174,7 +3192,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "BSCH001608082N7S00"
+		(property "MPN" "LQG18HN2N7S00D"
+			(at 196.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C162551"
 			(at 196.85 86.36 0)
 			(effects
 				(font

@@ -1896,6 +1896,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C107696"
+			(at 184.15 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "976a3d00-95ce-4e44-bd0f-43f035805a0b")
 		)
@@ -1974,6 +1983,15 @@
 			)
 		)
 		(property "MPN" "RC0603FR-07220RL"
+			(at 184.15 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C107696"
 			(at 184.15 146.05 0)
 			(effects
 				(font

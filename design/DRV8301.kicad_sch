@@ -8452,7 +8452,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "600mA 2.2uH ±20% 300mΩ 0603 Inductors "
+		(property "Description" "600mA 2.2uH ±20% 300mΩ 0603 Inductors"
 			(at 120.65 147.32 0)
 			(effects
 				(font
@@ -9330,7 +9330,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
+		(property "Manufacturer" "APV"
 			(at 194.31 50.8 0)
 			(effects
 				(font
@@ -9339,7 +9339,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LQM18DN220M70L"
+		(property "MPN" ""
 			(at 194.31 50.8 0)
 			(effects
 				(font
