@@ -9033,6 +9033,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C98969"
+			(at 142.24 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "22"
 			(uuid "c0969d9c-6a79-4af7-a350-003d4311633c")
 		)
@@ -9534,6 +9543,15 @@
 			)
 		)
 		(property "MPN" "LM3671MF-1.2/NOPB"
+			(at 101.6 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2650333"
 			(at 101.6 149.86 0)
 			(effects
 				(font

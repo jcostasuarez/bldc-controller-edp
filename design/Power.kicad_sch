@@ -4827,6 +4827,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C462197"
+			(at 35.56 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "8"
 			(uuid "9c6a8df4-bcf1-4a27-a3b5-60b6a2cce700")
 		)
@@ -5470,6 +5479,15 @@
 			)
 		)
 		(property "MPN" "AD8418AWBRZ-RL"
+			(at 218.44 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C462197"
 			(at 218.44 73.66 0)
 			(effects
 				(font
@@ -6666,6 +6684,15 @@
 			)
 		)
 		(property "MPN" "AD8418AWBRZ-RL"
+			(at 129.54 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C462197"
 			(at 129.54 73.66 0)
 			(effects
 				(font
