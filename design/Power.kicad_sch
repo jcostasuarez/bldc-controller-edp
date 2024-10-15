@@ -4377,6 +4377,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C137705"
+			(at 153.67 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "afc6bcc2-75f0-4328-ba9b-4759325b3b17")
 		)
@@ -4445,7 +4454,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
+		(property "Manufacturer" "YAGEO"
 			(at 129.54 55.88 0)
 			(effects
 				(font
@@ -4454,7 +4463,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CSNL2512FTL500"
+		(property "MPN" "PA2512FKM7T0U5E"
+			(at 129.54 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3033267"
 			(at 129.54 55.88 0)
 			(effects
 				(font
@@ -4541,6 +4559,15 @@
 			)
 		)
 		(property "MPN" "RC0603FR-074R7L"
+			(at 156.21 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C137705"
 			(at 156.21 78.74 0)
 			(effects
 				(font
@@ -4904,6 +4931,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C137705"
+			(at 57.15 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "42015fe1-1743-41f4-b90f-ad00fe447695")
 		)
@@ -4972,7 +5008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
+		(property "Manufacturer" "YAGEO"
 			(at 35.56 52.07 0)
 			(effects
 				(font
@@ -4981,7 +5017,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CSNL2512FTL500"
+		(property "MPN" "PA2512FKM7T0U5E"
+			(at 35.56 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3033267"
 			(at 35.56 52.07 0)
 			(effects
 				(font
@@ -5068,6 +5113,15 @@
 			)
 		)
 		(property "MPN" "RC0603FR-074R7L"
+			(at 59.69 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C137705"
 			(at 59.69 78.74 0)
 			(effects
 				(font
@@ -5528,6 +5582,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C137705"
+			(at 242.57 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c528329c-40ee-4909-b542-cec017b962ed")
 		)
@@ -5596,7 +5659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Stackpole Electronics Inc"
+		(property "Manufacturer" "YAGEO"
 			(at 218.44 55.88 0)
 			(effects
 				(font
@@ -5605,7 +5668,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "CSNL2512FTL500"
+		(property "MPN" "PA2512FKM7T0U5E"
+			(at 218.44 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C3033267"
 			(at 218.44 55.88 0)
 			(effects
 				(font
@@ -5692,6 +5764,15 @@
 			)
 		)
 		(property "MPN" "RC0603FR-074R7L"
+			(at 245.11 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C137705"
 			(at 245.11 76.2 0)
 			(effects
 				(font
@@ -6014,6 +6095,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C105588"
+			(at 128.27 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "7ae84b75-d5df-47d8-b302-1be8e518b454")
 		)
@@ -6100,6 +6190,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C105588"
+			(at 128.27 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2a9bd37e-ecd3-4500-8036-fe88668429f8")
 		)
@@ -6178,6 +6277,15 @@
 			)
 		)
 		(property "MPN" "RC0603FR-07100RL"
+			(at 128.27 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C105588"
 			(at 128.27 179.07 0)
 			(effects
 				(font
@@ -6827,6 +6935,15 @@
 			)
 		)
 		(property "MPN" "NTCG164BH103JT1"
+			(at 158.75 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C524451"
 			(at 158.75 133.35 0)
 			(effects
 				(font
