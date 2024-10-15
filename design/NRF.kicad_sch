@@ -4849,7 +4849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "ECS Inc."
+		(property "Manufacturer" "YXC Crystal Oscillators"
 			(at 157.48 116.84 0)
 			(effects
 				(font
@@ -4858,7 +4858,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ECS-160-20-3X-TR"
+		(property "MPN" "X49SM16MSD2SC"
+			(at 157.48 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C12676"
 			(at 157.48 116.84 0)
 			(effects
 				(font
@@ -4910,7 +4919,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal"
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-144_Vertical"
 			(at 238.76 73.66 0)
 			(effects
 				(font
