@@ -41370,6 +41370,17 @@
 			)
 		)
 	)
+	(gr_text "GND"
+		(at 185.19 50.58 180)
+		(layer "F.SilkS")
+		(uuid "11f0463a-bc96-46e4-9d15-092b1a3aa3c9")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
 	(gr_text "SCL"
 		(at 120.5 129 0)
 		(layer "F.SilkS")
@@ -41457,6 +41468,17 @@
 		(at 106.1 115.44 0)
 		(layer "F.SilkS")
 		(uuid "54c7ee44-a0e3-4a3c-bc3e-f059cfc6893c")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(gr_text "+SUPPLY"
+		(at 169.52 50.64 180)
+		(layer "F.SilkS")
+		(uuid "5be01d37-7289-41f9-bf67-2b622cce6d5f")
 		(effects
 			(font
 				(size 0.7 0.7)
