@@ -2542,6 +2542,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C8791"
+			(at 146.05 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "321040e6-e32a-4cfc-a62b-6ad454d9970e")
 		)
@@ -2993,7 +3002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Murata Electronics"
+		(property "Manufacturer" "APV"
 			(at 182.88 80.01 0)
 			(effects
 				(font
@@ -3002,7 +3011,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LQW18AS8N2G00D"
+		(property "MPN" ""
+			(at 182.88 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C6364698"
 			(at 182.88 80.01 0)
 			(effects
 				(font
@@ -3079,7 +3097,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" " KYOCERA AVX"
+		(property "Manufacturer" " Sunlord"
 			(at 195.58 73.66 0)
 			(effects
 				(font
@@ -3088,7 +3106,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "LCCI0603S3N9GTAR"
+		(property "MPN" ""
+			(at 195.58 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C13818"
 			(at 195.58 73.66 0)
 			(effects
 				(font
@@ -3165,7 +3192,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" " Pulse Electronics"
+		(property "Manufacturer" "Murata"
 			(at 196.85 86.36 0)
 			(effects
 				(font
@@ -3174,7 +3201,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "BSCH001608082N7S00"
+		(property "MPN" "LQG18HN2N7S00D"
+			(at 196.85 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C162551"
 			(at 196.85 86.36 0)
 			(effects
 				(font
@@ -4278,6 +4314,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C31850"
+			(at 154.94 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "78278806-a7de-46a0-a9d6-0aa4b915e43b")
 		)
@@ -4716,7 +4761,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603JR-0722KL"
+		(property "MPN" "RC0603FR-071ML"
+			(at 171.45 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22935"
 			(at 171.45 116.84 0)
 			(effects
 				(font
@@ -4795,7 +4849,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "ECS Inc."
+		(property "Manufacturer" "YXC Crystal Oscillators"
 			(at 157.48 116.84 0)
 			(effects
 				(font
@@ -4804,7 +4858,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ECS-160-20-3X-TR"
+		(property "MPN" "X49SM16MSD2SC"
+			(at 157.48 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C12676"
 			(at 157.48 116.84 0)
 			(effects
 				(font
@@ -4856,7 +4919,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-143_Horizontal"
+		(property "Footprint" "Connector_Coaxial:SMA_Amphenol_901-144_Vertical"
 			(at 238.76 73.66 0)
 			(effects
 				(font

@@ -1653,7 +1653,7 @@
 				)
 			)
 		)
-		(property "Value" "Red LED"
+		(property "Value" "R2"
 			(at 167.9575 137.16 0)
 			(effects
 				(font
@@ -1706,7 +1706,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C123009"
+		(property "LCSC" "C2286"
 			(at 167.9575 134.62 0)
 			(effects
 				(font
@@ -1748,7 +1748,7 @@
 				)
 			)
 		)
-		(property "Value" "Green LED"
+		(property "Value" "G1"
 			(at 167.9575 152.4 0)
 			(effects
 				(font
@@ -1801,7 +1801,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2984263"
+		(property "LCSC" "C2286"
 			(at 167.9575 149.86 0)
 			(effects
 				(font
@@ -1896,6 +1896,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C107696"
+			(at 184.15 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "976a3d00-95ce-4e44-bd0f-43f035805a0b")
 		)
@@ -1974,6 +1983,15 @@
 			)
 		)
 		(property "MPN" "RC0603FR-07220RL"
+			(at 184.15 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C107696"
 			(at 184.15 146.05 0)
 			(effects
 				(font
@@ -2216,7 +2234,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Blue LED"
+		(property "Value" "B3"
 			(at 199.39 128.5874 90)
 			(effects
 				(font
@@ -2270,7 +2288,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2846635"
+		(property "LCSC" "C2286"
 			(at 199.39 126.0474 0)
 			(effects
 				(font
@@ -2657,6 +2675,15 @@
 			)
 		)
 		(property "MPN" "RC0603FR-071KL"
+			(at 195.58 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C22548"
 			(at 195.58 135.89 0)
 			(effects
 				(font

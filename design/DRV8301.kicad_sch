@@ -4715,7 +4715,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C123420"
+		(property "LCSC" "C22961"
 			(at 119.38 29.21 0)
 			(effects
 				(font
@@ -5058,7 +5058,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 99.06 27.94 0)
 			(effects
 				(font
@@ -5076,7 +5076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 6.8NF 1206"
+		(property "Description" "CAP CER 6.8NF 0603"
 			(at 99.06 27.94 0)
 			(effects
 				(font
@@ -5103,7 +5103,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C577236"
+		(property "LCSC" "C1631"
 			(at 101.6 26.6762 0)
 			(effects
 				(font
@@ -5427,7 +5427,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C472763"
+		(property "LCSC" "C21122"
 			(at 111.7536 64.77 0)
 			(effects
 				(font
@@ -7504,7 +7504,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Red LED"
+		(property "Value" "R4"
 			(at 251.46 33.9724 90)
 			(effects
 				(font
@@ -7558,7 +7558,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C123009"
+		(property "LCSC" "C2286"
 			(at 251.46 31.4324 0)
 			(effects
 				(font
@@ -7652,7 +7652,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C163424"
+		(property "LCSC" "C23153"
 			(at 240.03 101.6 0)
 			(effects
 				(font
@@ -7746,7 +7746,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C227479"
+		(property "LCSC" "C4190"
 			(at 250.19 106.68 0)
 			(effects
 				(font
@@ -7840,7 +7840,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C163424"
+		(property "LCSC" "C23153"
 			(at 240.03 119.38 0)
 			(effects
 				(font
@@ -7935,7 +7935,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C227479"
+		(property "LCSC" "C4190"
 			(at 250.19 121.92 0)
 			(effects
 				(font
@@ -8029,7 +8029,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C163424"
+		(property "LCSC" "C23153"
 			(at 240.03 142.24 0)
 			(effects
 				(font
@@ -8124,7 +8124,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C227479"
+		(property "LCSC" "C4190"
 			(at 240.03 147.32 0)
 			(effects
 				(font
@@ -8417,7 +8417,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C98220"
+		(property "LCSC" "C25804"
 			(at 107.95 53.34 0)
 			(effects
 				(font
@@ -9848,7 +9848,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C6769250"
+		(property "LCSC" "C22808"
 			(at 248.92 41.91 0)
 			(effects
 				(font

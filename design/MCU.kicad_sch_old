@@ -6131,6 +6131,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C1339473"
+			(at 153.67 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0bcac762-8604-47b1-83ef-30d38a0ef70d")
 		)
@@ -6899,7 +6908,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Abracon LLC"
+		(property "Manufacturer" " ECEC(ZheJiang E ast Crystal Elec)"
 			(at 205.74 39.37 0)
 			(effects
 				(font
@@ -6908,7 +6917,16 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "ABLS-8.000MHZ-B4-T"
+		(property "MPN" "C08000J060"
+			(at 205.74 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C12674"
 			(at 205.74 39.37 0)
 			(effects
 				(font
