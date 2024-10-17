@@ -4794,7 +4794,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 85.09 36.83 0)
 			(effects
 				(font
@@ -4803,7 +4803,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RT0603BRD0718KL"
+		(property "MPN" "0603WAF1802T5E"
 			(at 85.09 36.83 0)
 			(effects
 				(font
@@ -4812,7 +4812,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C309650"
+		(property "LCSC" "C25810"
 			(at 85.09 36.83 0)
 			(effects
 				(font
@@ -4891,7 +4891,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 85.09 26.67 0)
 			(effects
 				(font
@@ -4900,7 +4900,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-073K3L"
+		(property "MPN" "0603WAF3301T5E"
 			(at 85.09 26.67 0)
 			(effects
 				(font
@@ -4909,7 +4909,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C108078"
+		(property "LCSC" "C22978"
 			(at 85.09 26.67 0)
 			(effects
 				(font
@@ -4988,7 +4988,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
 			(at 99.06 35.56 0)
 			(effects
 				(font
@@ -4997,7 +4997,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RC0603FR-0715KL"
+		(property "MPN" "0603WAF1502T5E"
 			(at 99.06 35.56 0)
 			(effects
 				(font
@@ -5006,7 +5006,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C114661"
+		(property "LCSC" "C22809"
 			(at 99.06 35.56 0)
 			(effects
 				(font
@@ -9334,7 +9334,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Shottky 60V 2A"
+		(property "Description" "40V Independent Type 550mV@5A 5A SMA(DO-214AC) Schottky Diodes ROHS"
 			(at 187.96 54.61 0)
 			(effects
 				(font
@@ -9343,7 +9343,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "FUXINSEMI"
+		(property "Manufacturer" "MDD(Microdiode Semiconductor)"
 			(at 187.96 54.61 0)
 			(effects
 				(font
@@ -9352,7 +9352,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "B260A"
+		(property "MPN" "SS54"
 			(at 187.96 54.61 0)
 			(effects
 				(font
@@ -9361,7 +9361,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C6807777"
+		(property "LCSC" "C22452"
 			(at 190.5 53.0224 0)
 			(effects
 				(font
