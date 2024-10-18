@@ -1,4 +1,4 @@
-23960808089878009
+23962537314295016
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -97158,6 +97158,13 @@ SMD_POT_TS53
 SMD_POT_TS53
 0
 3
+3
+crf1
+SO-8_3.9x4.9mm_P1.27mm
+SO, 8 Pin (https://www.nxp.com/docs/en/data-sheet/PCF8523.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SO SO
+0
+8
 3
 crf1
 SO-8_INF
