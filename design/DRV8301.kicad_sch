@@ -8683,7 +8683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "600mA 2.2uH ±20% 300mΩ 0603 Inductors"
+		(property "Description" "600mA 2.2uH ±20% 300mΩ 0603"
 			(at 120.65 147.32 0)
 			(effects
 				(font
@@ -9535,7 +9535,7 @@
 				)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "22uH"
 			(at 194.31 48.26 90)
 			(effects
 				(font
@@ -9561,7 +9561,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "200mA 22uH ±10% 4.69Ω 0603"
 			(at 194.31 50.8 0)
 			(effects
 				(font
@@ -9579,7 +9579,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "AHW1608FE220KTF"
 			(at 194.31 50.8 0)
 			(effects
 				(font
@@ -9841,7 +9841,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 76.2 149.86 0)
 			(effects
 				(font
@@ -9859,7 +9859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "CAP CER 4.7UF 100V X7R 1210"
+		(property "Description" "CAP CER 4.7UF 16V X5R 0603"
 			(at 76.2 149.86 0)
 			(effects
 				(font
@@ -9868,7 +9868,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Holy Stone Enterprise Co., Ltd. "
+		(property "Manufacturer" "Samsung Electro-Mechanics"
 			(at 76.2 149.86 0)
 			(effects
 				(font
@@ -9877,7 +9877,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "C1210X475K101T"
+		(property "MPN" "CL10A475KO8NNNC"
 			(at 76.2 149.86 0)
 			(effects
 				(font
@@ -9886,7 +9886,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C337978"
+		(property "LCSC" "C19666"
 			(at 78.74 148.5962 0)
 			(effects
 				(font
@@ -9918,7 +9918,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "1c7991c5-8341-458e-85c9-f96c2c45746b")
 		(property "Reference" "TP13"
 			(at 231.14 131.3179 0)
@@ -9985,7 +9985,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "39d158f1-9150-4dd3-b50c-c3ed4b265645")
 		(property "Reference" "TP12"
 			(at 231.14 109.7279 0)
@@ -10146,7 +10146,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "eaa2d077-33a2-478d-819c-768e98fdc6ee")
 		(property "Reference" "TP11"
 			(at 231.14 89.4079 0)

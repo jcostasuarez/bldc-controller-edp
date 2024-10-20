@@ -1843,7 +1843,7 @@
 				)
 			)
 		)
-		(property "Value" "220Ω"
+		(property "Value" "200Ω"
 			(at 184.15 138.43 90)
 			(effects
 				(font
@@ -1887,7 +1887,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603WAJ0221T5E"
+		(property "MPN" "0603WAF2000T5E"
 			(at 184.15 142.24 0)
 			(effects
 				(font
@@ -1896,7 +1896,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1226"
+		(property "LCSC" "C8218"
 			(at 184.15 142.24 0)
 			(effects
 				(font
@@ -1938,7 +1938,7 @@
 				)
 			)
 		)
-		(property "Value" "220Ω"
+		(property "Value" "200Ω"
 			(at 184.15 152.4 90)
 			(effects
 				(font
@@ -1982,7 +1982,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "0603WAJ0221T5E"
+		(property "MPN" "0603WAF2000T5E"
 			(at 184.15 146.05 0)
 			(effects
 				(font
@@ -1991,7 +1991,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C1226"
+		(property "LCSC" "C8218"
 			(at 184.15 146.05 0)
 			(effects
 				(font

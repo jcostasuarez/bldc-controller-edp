@@ -8848,7 +8848,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "5d624442-dd66-4cd0-91bf-7454e7128b36")
 		(property "Reference" "TP6"
 			(at 38.1 33.5279 0)
@@ -9513,7 +9513,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "97bfb442-9f43-4e12-975e-43d1ee12b143")
 		(property "Reference" "TP8"
 			(at 210.82 39.8779 0)
@@ -9646,7 +9646,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "9b6fbef4-c24f-48ec-96a0-10f64bb5e285")
 		(property "Reference" "TP9"
 			(at 220.98 39.8779 0)
@@ -9713,7 +9713,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "c4affe7f-499a-42d8-8d58-bf49acdf9537")
 		(property "Reference" "TP4"
 			(at 121.92 41.1479 0)
@@ -9780,7 +9780,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "caee562d-77c0-4a9d-a076-f5bc16b887bd")
 		(property "Reference" "TP7"
 			(at 132.08 41.1479 0)
@@ -9846,7 +9846,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d3d9597a-6b96-4570-afe6-5fd8017c8cb1")
 		(property "Reference" "TP10"
 			(at 193.04 97.0279 0)
@@ -10010,7 +10010,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "e6f92401-635c-4a01-938f-810ea7a2b7b0")
 		(property "Reference" "TP5"
 			(at 27.94 33.5279 0)

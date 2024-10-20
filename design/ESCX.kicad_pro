@@ -558,7 +558,7 @@
       "field_delimiter": ";",
       "keep_line_breaks": false,
       "keep_tabs": false,
-      "name": "Semicolons",
+      "name": "Puntos y comas",
       "ref_delimiter": ",",
       "ref_range_delimiter": "",
       "string_delimiter": "'"
@@ -682,7 +682,7 @@
   "sheets": [
     [
       "6389d757-a1bd-4c0a-9d55-6114b19cc67a",
-      "Root"
+      "Raíz"
     ],
     [
       "00000000-0000-0000-0000-00005ae146b2",
