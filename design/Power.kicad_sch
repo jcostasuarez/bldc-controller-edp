@@ -4445,24 +4445,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 153.67 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-074R7L"
-			(at 153.67 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C23164"
 			(at 153.67 45.72 0)
 			(effects
@@ -4532,24 +4514,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 129.54 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 129.54 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "PA2512FKM7T0U5E"
 			(at 129.54 55.88 0)
 			(effects
 				(font
@@ -4635,24 +4599,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 156.21 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-074R7L"
-			(at 156.21 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C23164"
 			(at 156.21 78.74 0)
 			(effects
@@ -4722,24 +4668,6 @@
 			)
 		)
 		(property "Description" "CAP 2.2u, 16V, 0603"
-			(at 129.54 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 129.54 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL10A225KO8NNNC"
 			(at 129.54 91.44 0)
 			(effects
 				(font
@@ -4895,24 +4823,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Analog Devices Inc."
-			(at 35.56 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AD8418AWBRZ-RL"
-			(at 35.56 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C462197"
 			(at 35.56 73.66 0)
 			(effects
@@ -5008,24 +4918,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 57.15 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-074R7L"
-			(at 57.15 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C23164"
 			(at 57.15 45.72 0)
 			(effects
@@ -5103,24 +4995,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 35.56 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "PA2512FKM7T0U5E"
-			(at 35.56 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C3033267"
 			(at 35.56 52.07 0)
 			(effects
@@ -5190,24 +5064,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 59.69 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 59.69 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-074R7L"
 			(at 59.69 78.74 0)
 			(effects
 				(font
@@ -5295,24 +5151,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" " Murata Electronics"
-			(at 88.9 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "GRM32EC72A106KE05L"
-			(at 88.9 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C576517"
 			(at 91.44 63.5062 0)
 			(effects
@@ -5382,24 +5220,6 @@
 			)
 		)
 		(property "Description" "CAP 2.2u, 16V, 0603"
-			(at 35.56 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 35.56 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL10A225KO8NNNC"
 			(at 35.56 91.44 0)
 			(effects
 				(font
@@ -5555,24 +5375,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Analog Devices Inc."
-			(at 218.44 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AD8418AWBRZ-RL"
-			(at 218.44 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C462197"
 			(at 218.44 73.66 0)
 			(effects
@@ -5668,24 +5470,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 242.57 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-074R7L"
-			(at 242.57 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C23164"
 			(at 242.57 45.72 0)
 			(effects
@@ -5755,24 +5539,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 218.44 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 218.44 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "PA2512FKM7T0U5E"
 			(at 218.44 55.88 0)
 			(effects
 				(font
@@ -5858,24 +5624,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 245.11 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-074R7L"
-			(at 245.11 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C23164"
 			(at 245.11 76.2 0)
 			(effects
@@ -5945,24 +5693,6 @@
 			)
 		)
 		(property "Description" "CAP 2.2u, 16V, 0603"
-			(at 218.44 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 218.44 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL10A225KO8NNNC"
 			(at 218.44 91.44 0)
 			(effects
 				(font
@@ -6181,24 +5911,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 128.27 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-07100RL"
-			(at 128.27 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C22775"
 			(at 128.27 140.97 0)
 			(effects
@@ -6276,24 +5988,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 128.27 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-07100RL"
-			(at 128.27 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C22775"
 			(at 128.27 161.29 0)
 			(effects
@@ -6363,24 +6057,6 @@
 			)
 		)
 		(property "Description" "R 2k2, 0603"
-			(at 128.27 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 128.27 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-07100RL"
 			(at 128.27 179.07 0)
 			(effects
 				(font
@@ -6468,24 +6144,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
-			(at 114.3 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603B472K500NT"
-			(at 114.3 146.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C53987"
 			(at 116.84 144.7862 0)
 			(effects
@@ -6557,24 +6215,6 @@
 			)
 		)
 		(property "Description" "CAP CER 0603 4.7NF 16V X7R 10%"
-			(at 114.3 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
-			(at 114.3 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603B472K500NT"
 			(at 114.3 166.37 0)
 			(effects
 				(font
@@ -6662,24 +6302,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "FH (Guangdong Fenghua Advanced Tech)"
-			(at 114.3 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "0603B472K500NT"
-			(at 114.3 184.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C53987"
 			(at 116.84 182.8862 0)
 			(effects
@@ -6752,24 +6374,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 129.54 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Analog Devices Inc."
-			(at 129.54 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AD8418AWBRZ-RL"
 			(at 129.54 73.66 0)
 			(effects
 				(font
@@ -6941,24 +6545,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
-			(at 158.75 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-0710KL"
-			(at 158.75 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C25804"
 			(at 158.75 143.51 0)
 			(effects
@@ -7038,24 +6624,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "TDK Corporation"
-			(at 158.75 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "NTCG164BH103JT1"
-			(at 158.75 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C524451"
 			(at 158.75 133.35 0)
 			(effects
@@ -7127,24 +6695,6 @@
 			)
 		)
 		(property "Description" "CAP 2.2u, 16V, 0603"
-			(at 148.59 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Samsung Electro-Mechanics"
-			(at 148.59 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CL10A225KO8NNNC"
 			(at 148.59 144.78 0)
 			(effects
 				(font
@@ -7313,24 +6863,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 55.88 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "IRF7854TRPBF"
-			(at 55.88 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C158109"
 			(at 55.88 44.45 0)
 			(effects
@@ -7407,24 +6939,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 55.88 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 55.88 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "IRF7854TRPBF"
 			(at 55.88 77.47 0)
 			(effects
 				(font
@@ -7517,24 +7031,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 149.86 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "IRF7854TRPBF"
-			(at 149.86 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C158109"
 			(at 149.86 44.45 0)
 			(effects
@@ -7611,24 +7107,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 149.86 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "IRF7854TRPBF"
 			(at 149.86 77.47 0)
 			(effects
 				(font
@@ -7721,24 +7199,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "IRF7854TRPBF"
-			(at 238.76 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C158109"
 			(at 238.76 74.93 0)
 			(effects
@@ -7815,24 +7275,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 238.76 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Infineon Technologies"
-			(at 238.76 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "IRF7854TRPBF"
 			(at 238.76 44.45 0)
 			(effects
 				(font
@@ -8138,24 +7580,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" " Murata Electronics"
-			(at 182.88 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "GRM32EC72A106KE05L"
-			(at 182.88 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C576517"
 			(at 185.42 62.2362 0)
 			(effects
@@ -8293,24 +7717,6 @@
 			)
 		)
 		(property "Description" "R 2k2, 0603"
-			(at 208.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 208.28 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "AC0603DR-072K2L"
 			(at 208.28 151.13 0)
 			(effects
 				(font
@@ -8598,24 +8004,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" " Murata Electronics"
-			(at 269.24 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "GRM32EC72A106KE05L"
-			(at 269.24 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C576517"
 			(at 271.78 58.4262 0)
 			(effects
@@ -8644,7 +8032,7 @@
 		(lib_id "Connector:TestPoint")
 		(at 44.45 160.02 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
@@ -8712,7 +8100,7 @@
 		(at 67.31 160.02 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
@@ -8845,8 +8233,8 @@
 		(at 40.64 38.1 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "5d624442-dd66-4cd0-91bf-7454e7128b36")
@@ -9047,7 +8435,7 @@
 		(lib_id "Connector:TestPoint")
 		(at 55.88 160.02 0)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
 		(dnp yes)
@@ -9115,10 +8503,10 @@
 		(at 29.21 166.37 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "6f98c2f2-07f9-4b9d-9002-4f1a241689ca")
 		(property "Reference" "J4"
 			(at 30.226 155.956 0)
@@ -9157,24 +8545,6 @@
 			)
 		)
 		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 29.21 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Phoenix Contact"
-			(at 29.21 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1715734"
 			(at 29.21 166.37 0)
 			(effects
 				(font
@@ -9323,24 +8693,6 @@
 			)
 		)
 		(property "Description" ""
-			(at 208.28 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "YAGEO"
-			(at 208.28 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "RC0603FR-0739KL"
 			(at 208.28 130.81 0)
 			(effects
 				(font
@@ -9510,8 +8862,8 @@
 		(at 213.36 44.45 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "97bfb442-9f43-4e12-975e-43d1ee12b143")
@@ -9643,8 +8995,8 @@
 		(at 223.52 44.45 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "9b6fbef4-c24f-48ec-96a0-10f64bb5e285")
@@ -9710,8 +9062,8 @@
 		(at 124.46 45.72 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "c4affe7f-499a-42d8-8d58-bf49acdf9537")
@@ -9777,8 +9129,8 @@
 		(at 134.62 45.72 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "caee562d-77c0-4a9d-a076-f5bc16b887bd")
@@ -9843,8 +9195,8 @@
 		(lib_id "Connector:TestPoint")
 		(at 190.5 101.6 0)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "d3d9597a-6b96-4570-afe6-5fd8017c8cb1")
@@ -9910,10 +9262,10 @@
 		(at 29.21 140.97 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
+		(exclude_from_sim yes)
 		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "de209dc9-77b7-414b-9826-9c729cd7f084")
 		(property "Reference" "J3"
 			(at 30.734 133.096 0)
@@ -9960,24 +9312,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Phoenix Contact"
-			(at 29.21 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1715721"
-			(at 29.21 140.97 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(property "LCSC" "C480516"
 			(at 30.734 133.096 0)
 			(effects
@@ -10007,8 +9341,8 @@
 		(at 30.48 38.1 0)
 		(mirror y)
 		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
+		(exclude_from_sim yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "e6f92401-635c-4a01-938f-810ea7a2b7b0")
