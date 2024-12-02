@@ -1,0 +1,4 @@
+../Core/Src/motor_bldc.c:22:6:UpdatePhaseFromHall	8	static
+../Core/Src/motor_bldc.c:50:9:GetHallState	16	static
+../Core/Src/motor_bldc.c:62:6:UpdatePhase	16	static
+../Core/Src/motor_bldc.c:110:6:Rotate	16	static

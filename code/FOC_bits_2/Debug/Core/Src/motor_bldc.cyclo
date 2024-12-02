@@ -1,0 +1,3 @@
+../Core/Src/motor_bldc.c:15:6:UpdatePhaseFromHall	7
+../Core/Src/motor_bldc.c:43:9:GetHallState	1
+../Core/Src/motor_bldc.c:55:6:UpdatePhase	7
