@@ -1,0 +1,3 @@
+../Core/Src/drv8301.c:3:6:drv8301_init	16	static
+../Core/Src/drv8301.c:16:6:drv8301_write_reg	24	static
+../Core/Src/drv8301.c:26:10:drv8301_read_reg	24	static

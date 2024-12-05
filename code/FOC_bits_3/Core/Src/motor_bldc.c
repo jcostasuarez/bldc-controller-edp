@@ -7,159 +7,163 @@
 #include "main.h"
 #include "motor_bldc.h"
 
-#define A_H (GPIOA, GPIO_PIN_8)
-#define B_H (GPIOA, GPIO_PIN_9)
-#define C_H (GPIOA, GPIO_PIN_10)
-#define A_L (GPIOB, GPIO_PIN_15)
-#define B_L (GPIOB, GPIO_PIN_14)
-#define C_L (GPIOB, GPIO_PIN_13)
-
-
-
-extern TIM_HandleTypeDef htim1;
-uint8_t last_hallState;
-
-void UpdatePhaseFromHall(void) {
-    last_hallState = GetHallState();
-
-    switch (last_hallState) {
-        case 0b101: // HALL_A=1, HALL_B=0, HALL_C=1
-            UpdatePhase(1); // Paso 1
-            break;
-        case 0b001: // HALL_A=0, HALL_B=0, HALL_C=1
-            UpdatePhase(2); // Paso 2
-            break;
-        case 0b011: // HALL_A=0, HALL_B=1, HALL_C=1
-            UpdatePhase(3); // Paso 3
-            break;
-        case 0b010: // HALL_A=0, HALL_B=1, HALL_C=0
-            UpdatePhase(4); // Paso 4
-            break;
-        case 0b110: // HALL_A=1, HALL_B=1, HALL_C=0
-            UpdatePhase(5); // Paso 5
-            break;
-        case 0b100: // HALL_A=1, HALL_B=0, HALL_C=0
-            UpdatePhase(6); // Paso 6
-            break;
-        default:
-            // Error: Estado inválido
-            break;
-    }
-}
-
-uint8_t GetHallState(void) {
+/**
+ * @brief: Read Hall sensors
+ * @arg: orientation. The order of the HALL sensors.
+ * @return: Hall sensors values as an 8 bit word with the following structure:
+ * 	"0 0 0 0 0 Hx Hx Hx"
+ * 	The order of the Hall sensors depends on the "orientation" arguments.
+ */
+uint8_t motor_read_hall(uint8_t orientation) {
     uint8_t hallState = 0;
 
-    // Leer los estados de los pines Hall
-    hallState |= (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_6) << 2); // Bit 2
-    hallState |= (HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_7) << 1); // Bit 1
-    hallState |= HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_8);      // Bit 0
+    switch(orientation) {
+    	case 0:
+			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 2);
+			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 1);
+			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 0);
+        break;
 
-    return hallState; // Retorna un valor entre 1 y 6
-}
+    	case 1:
+			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 2);
+			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 0);
+			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 1);
+		break;
 
+    	case 2:
+			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 1);
+			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 2);
+			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 0);
+		break;
 
-void UpdatePhase(uint8_t hallState) {
-    // Apaga todas las fases antes de configurar el nuevo estado
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_RESET); // A+
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET); // A-
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9,  GPIO_PIN_RESET); // B+
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET); // B-
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8,  GPIO_PIN_RESET); // C+
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET); // C-
+    	case 3:
+			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 1);
+			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 0);
+			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 2);
+		break;
 
-    // Configura las fases activas según el estado de los sensores Hall
-    switch (hallState) {
-        case 0b101: // Paso 1: A+ y B-
-            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET); // A+
-            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET); // B-
-            break;
+    	case 4:
+			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 0);
+			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 1);
+			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 2);
+		break;
 
-        case 0b100: // Paso 2: A+ y C-
-            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10, GPIO_PIN_SET); // A+
-            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_SET); // C-
-            break;
-
-        case 0b110: // Paso 3: B+ y C-
-            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET); // B+
-            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_SET); // C-
-            break;
-
-        case 0b010: // Paso 4: B+ y A-
-            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9, GPIO_PIN_SET); // B+
-            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET); // A-
-            break;
-
-        case 0b011: // Paso 5: C+ y A-
-            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET); // C+
-            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET); // A-
-            break;
-
-        case 0b001: // Paso 6: C+ y B-
-            HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET); // C+
-            HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET); // B-
-            break;
-
-        default: // Estado no válido
-            // Todas las fases apagadas
-            break;
+    	case 5:
+			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 0);
+			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 2);
+			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 1);
+		break;
     }
+
+    return hallState;
 }
 
+/**
+ * @brief: Turn off all transistors
+ */
+void motor_reset(void) {
+	HAL_GPIO_WritePin(H1_GPIO_Port, H1_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(H2_GPIO_Port, H2_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(H3_GPIO_Port, H3_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(L1_GPIO_Port, L1_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(L2_GPIO_Port, L2_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(L3_GPIO_Port, L3_Pin, GPIO_PIN_RESET);
+}
 
-void Rotate(uint8_t t) {//time in miliseconds
-    HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET); // A+
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9,  GPIO_PIN_RESET);
-    HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET); //B-
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10,  GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);
+/**
+ * @brief: Tries to rotate the motor with different Hall Sensor orientation,
+ * 	until it finds the one which makes it spin.
+ * @return: Hall sensor correct orientation.
+ */
+uint8_t motor_detect_hall_orientation(void) {
+	uint8_t i = 0;
+	uint32_t spins = 0;
+	uint32_t max_spins = 0;
+	uint8_t orientation = 0;
 
-	HAL_Delay(t);
+	for (i=0; i <= 5; i++) {
+		flag_timer_10seg = 0;
+		HAL_TIM_Base_Start_IT(&htim3);
+		spins = motor_rotate(i, &flag_timer_10seg);
 
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_SET); // A+
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9,  GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10,  GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_SET); // C-
+		if (spins > max_spins) {
+			orientation = i;
+			max_spins = spins;
+		}
+	}
+	motor_reset();
+	flag_timer_10seg = 0;
+	return orientation;
 
-	HAL_Delay(t);
+}
 
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9,  GPIO_PIN_SET); // B+
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10,  GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_SET); // C-
+/**
+ * @brief: Rotates the motor. The rotation speed is given by the voltage applied to the motor,
+ * 	which is given by the supply voltage, provided that the transistors are held ON during the
+ * 	whole phase (hall state).
+ * @arg: orientation. Hall sensors' order.
+ * @arg: exit_flag. Pointer to a value, that should be "1" to exit this function.
+ * @return number of "spins", given by the amount of hall sensors' shifts.
+ */
+uint32_t motor_rotate(uint8_t orientation, uint8_t* exit_flag) {
+	uint8_t nFault = 0;
+	uint8_t hall_state = 0;
+	uint8_t previous_hall_state = 0;
+	uint32_t spins = 0;
 
-	HAL_Delay(t);
+	while((*exit_flag) == 0){
+		// In case of fault from the driver, turn on the Red led.
+		nFault = !HAL_GPIO_ReadPin(nFAULT_GPIO_Port, nFAULT_Pin);
+		HAL_GPIO_WritePin(LED_R_GPIO_Port, LED_R_Pin, nFault);
 
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET); // A-
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9,  GPIO_PIN_SET); // B+
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10,  GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);
+		// Read hall and, in case of a transition, turn off all transistors to avoid
+		// short-circuiting two transistors.
+		hall_state = motor_read_hall(orientation);
+		if (previous_hall_state != hall_state && hall_state != 0 && hall_state != 7) {
+			motor_reset();
+			previous_hall_state = hall_state;
+			spins++;
+		}
 
-	HAL_Delay(t);
+		// Turn on the transistors according to the HALL Sensors
+		switch(hall_state) {
+			case HALL_STATE_A:
+				HAL_GPIO_WritePin(H2_GPIO_Port, H2_Pin, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(L3_GPIO_Port, L3_Pin, GPIO_PIN_SET);
+			break;
 
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_SET); // A-
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9,  GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10,  GPIO_PIN_SET); // C+
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);
+			case HALL_STATE_B:
+				HAL_GPIO_WritePin(H2_GPIO_Port, H2_Pin, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(L1_GPIO_Port, L1_Pin, GPIO_PIN_SET);
+			break;
 
-	HAL_Delay(t);
+			case HALL_STATE_C:
+				HAL_GPIO_WritePin(H3_GPIO_Port, H3_Pin, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(L1_GPIO_Port, L1_Pin, GPIO_PIN_SET);
+			break;
 
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_8, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_15, GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_9,  GPIO_PIN_RESET);
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_14, GPIO_PIN_SET); // B-
-	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_10,  GPIO_PIN_SET); // C+
-	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_13, GPIO_PIN_RESET);
+			case HALL_STATE_D:
+				HAL_GPIO_WritePin(H3_GPIO_Port, H3_Pin, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(L2_GPIO_Port, L2_Pin, GPIO_PIN_SET);
+			break;
 
-	HAL_Delay(t);
+			case HALL_STATE_E:
+				HAL_GPIO_WritePin(H1_GPIO_Port, H1_Pin, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(L2_GPIO_Port, L2_Pin, GPIO_PIN_SET);
+			break;
+
+			case HALL_STATE_F:
+				HAL_GPIO_WritePin(H1_GPIO_Port, H1_Pin, GPIO_PIN_SET);
+				HAL_GPIO_WritePin(L3_GPIO_Port, L3_Pin, GPIO_PIN_SET);
+			break;
+
+			default:
+				// motor_reset
+			break;
+		}
+	}
+
+	motor_reset();
+	return spins;
 }
 

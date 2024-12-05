@@ -1,0 +1,15 @@
+void drv8301_init(void) {
+	// Disable OC (OverCurrent protection)
+	drv8301_write_reg(2, 0x0430);
+	drv8301_write_reg(2, 0x0430);
+
+	drv8301_set_current_amp_gain(20);
+}
+
+void drv8301_write_reg(int reg, int data) {
+	uint16_t out = 0;
+	out |= (reg & 0x0F) << 11;
+	out |= data & 0x7FF;
+
+	HAL_SPI_Transmit(hspi, pData, Size, Timeout)
+}

@@ -60,8 +60,8 @@ all: main-build
 main-build: FOC_bits_3.elf secondary-outputs
 
 # Tool invocations
-FOC_bits_3.elf FOC_bits_3.map: $(OBJS) $(USER_OBJS) C:\Users\bruno\STM32CubeIDE\workspace_1.9.0\FOC_bits_3\STM32F401RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "FOC_bits_3.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\bruno\STM32CubeIDE\workspace_1.9.0\FOC_bits_3\STM32F401RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FOC_bits_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+FOC_bits_3.elf FOC_bits_3.map: $(OBJS) $(USER_OBJS) /home/cotti/Desktop/Potencia/repos/bldc-controller-edp/code/FOC_bits_3/STM32F401RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "FOC_bits_3.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/cotti/Desktop/Potencia/repos/bldc-controller-edp/code/FOC_bits_3/STM32F401RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FOC_bits_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

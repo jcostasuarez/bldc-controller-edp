@@ -1,0 +1,10 @@
+19:57:54 **** Incremental Build of configuration Debug for project FOC_bits_3 ****
+make -j4 all 
+arm-none-eabi-size  FOC_bits_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13728	     12	   1732	  15472	   3c70	FOC_bits_3.elf
+Finished building: default.size.stdout
+ 
+
+19:57:55 Build Finished. 0 errors, 0 warnings. (took 835ms)
+
