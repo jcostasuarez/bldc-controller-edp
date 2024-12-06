@@ -1,4 +1,5 @@
 #include "drv8301.h"
+#include "debug.h"
 
 void drv8301_init(void) {
 
@@ -17,8 +18,20 @@ void drv8301_init(void) {
 	drv8301_write_reg(2, 0x0430);
 }
 
+/**
+ * Write to DRV8301 register
+ * @param reg Register to write to
+ * @param data Data to write
+ */
 void drv8301_write_reg(int reg, int data) {
+
+	HAL_StatusTypeDef status = HAL_OK;
 	uint16_t out = 0;
+
+	// Validación de parámetros
+    if (reg < 0 || reg > 15) return;  // Dirección fuera de rango
+    if (data < 0 || data > 0x07FF) return;  // Datos fuera de rango
+
 	out |= (reg & 0x0F) << 11;
 	out |= data & 0x7FF;
 

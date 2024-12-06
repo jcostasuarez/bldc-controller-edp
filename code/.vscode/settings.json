@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "drv8301.h": "c",
+        "led.h": "c",
+        "main.h": "c"
+    }
+}

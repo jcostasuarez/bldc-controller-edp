@@ -109,6 +109,8 @@ int main(void)
   while (1)
   {
 	  motor_rotate(orientation, &dont_exit);
+    debug_blink_update();\
+    
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
