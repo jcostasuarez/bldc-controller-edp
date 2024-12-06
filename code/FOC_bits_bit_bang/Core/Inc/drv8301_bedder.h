@@ -20,7 +20,6 @@ void drv8301_set_oc_adj(int val);
 void drv8301_set_oc_mode(drv8301_oc_mode mode);
 int drv8301_read_faults(void);
 void drv8301_reset_faults(void);
-char* drv8301_faults_to_string(int faults);
 unsigned int drv8301_read_reg(int reg);
 void drv8301_write_reg(int reg, int data);
 void drv8301_set_current_amp_gain(int gain);

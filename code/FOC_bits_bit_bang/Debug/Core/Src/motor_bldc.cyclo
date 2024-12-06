@@ -1,4 +1,4 @@
 ../Core/Src/motor_bldc.c:17:9:motor_read_hall	7
 ../Core/Src/motor_bldc.c:64:6:motor_reset	1
 ../Core/Src/motor_bldc.c:78:9:motor_detect_hall_orientation	3
-../Core/Src/motor_bldc.c:109:10:motor_rotate	11
+../Core/Src/motor_bldc.c:108:10:motor_rotate	11

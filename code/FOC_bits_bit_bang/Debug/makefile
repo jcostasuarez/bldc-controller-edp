@@ -34,34 +34,34 @@ $(wildcard ../makefile.init) \
 $(wildcard ../makefile.targets) \
 
 
-BUILD_ARTIFACT_NAME := FOC_bits_3
+BUILD_ARTIFACT_NAME := FOC_bits_bit_bang
 BUILD_ARTIFACT_EXTENSION := elf
 BUILD_ARTIFACT_PREFIX :=
 BUILD_ARTIFACT := $(BUILD_ARTIFACT_PREFIX)$(BUILD_ARTIFACT_NAME)$(if $(BUILD_ARTIFACT_EXTENSION),.$(BUILD_ARTIFACT_EXTENSION),)
 
 # Add inputs and outputs from these tool invocations to the build variables 
 EXECUTABLES += \
-FOC_bits_3.elf \
+FOC_bits_bit_bang.elf \
 
 MAP_FILES += \
-FOC_bits_3.map \
+FOC_bits_bit_bang.map \
 
 SIZE_OUTPUT += \
 default.size.stdout \
 
 OBJDUMP_LIST += \
-FOC_bits_3.list \
+FOC_bits_bit_bang.list \
 
 
 # All Target
 all: main-build
 
 # Main-build Target
-main-build: FOC_bits_3.elf secondary-outputs
+main-build: FOC_bits_bit_bang.elf secondary-outputs
 
 # Tool invocations
-FOC_bits_3.elf FOC_bits_3.map: $(OBJS) $(USER_OBJS) /home/cotti/Desktop/Potencia/repos/bldc-controller-edp/code/FOC_bits_3/STM32F401RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "FOC_bits_3.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/cotti/Desktop/Potencia/repos/bldc-controller-edp/code/FOC_bits_3/STM32F401RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FOC_bits_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+FOC_bits_bit_bang.elf FOC_bits_bit_bang.map: $(OBJS) $(USER_OBJS) /home/cotti/Desktop/Potencia/repos/bldc-controller-edp/code/FOC_bits_bit_bang/STM32F401RCTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "FOC_bits_bit_bang.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"/home/cotti/Desktop/Potencia/repos/bldc-controller-edp/code/FOC_bits_bit_bang/STM32F401RCTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FOC_bits_bit_bang.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -70,14 +70,14 @@ default.size.stdout: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
 	@echo 'Finished building: $@'
 	@echo ' '
 
-FOC_bits_3.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "FOC_bits_3.list"
+FOC_bits_bit_bang.list: $(EXECUTABLES) makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-objdump -h -S $(EXECUTABLES) > "FOC_bits_bit_bang.list"
 	@echo 'Finished building: $@'
 	@echo ' '
 
 # Other Targets
 clean:
-	-$(RM) FOC_bits_3.elf FOC_bits_3.list FOC_bits_3.map default.size.stdout
+	-$(RM) FOC_bits_bit_bang.elf FOC_bits_bit_bang.list FOC_bits_bit_bang.map default.size.stdout
 	-@echo ' '
 
 secondary-outputs: $(SIZE_OUTPUT) $(OBJDUMP_LIST)

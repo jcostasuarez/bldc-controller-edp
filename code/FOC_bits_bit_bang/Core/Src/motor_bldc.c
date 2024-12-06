@@ -15,47 +15,46 @@
  * 	The order of the Hall sensors depends on the "orientation" arguments.
  */
 uint8_t motor_read_hall(uint8_t orientation) {
-    uint8_t hallState = 0;
+    uint8_t hallStateOld = 0; uint8_t hallStateNew = 0;
+    uint8_t a, b ,c;
 
     switch(orientation) {
-    	case 0:
-			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 2);
-			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 1);
-			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 0);
-        break;
+    case 0:
+    	a = 2; b = 1; c = 0;
+    	break;
+    case 1:
+    	a = 2; b = 0; c = 1;
+    	break;
+    case 2:
+    	a = 1; b = 2; c = 0;
+    	break;
+    case 3:
+    	a = 1; b = 0; c = 2;
+    	break;
+    case 4:
+    	a = 0; b = 1; c = 2;
+    	break;
+    case 5:
+    	a = 0; b = 2; c = 1;
+    	break;
 
-    	case 1:
-			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 2);
-			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 0);
-			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 1);
-		break;
-
-    	case 2:
-			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 1);
-			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 2);
-			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 0);
-		break;
-
-    	case 3:
-			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 1);
-			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 0);
-			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 2);
-		break;
-
-    	case 4:
-			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 0);
-			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 1);
-			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 2);
-		break;
-
-    	case 5:
-			hallState |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << 0);
-			hallState |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << 2);
-			hallState |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << 1);
-		break;
     }
 
-    return hallState;
+    do {
+    // Read hall states with debounce;
+	hallStateOld |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << a);
+	hallStateOld |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << b);
+	hallStateOld |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << c);
+
+	// Artificial delay
+	for (volatile int i = 0;i < 10;i++) {__NOP();}
+
+	hallStateNew |= (HAL_GPIO_ReadPin(HALL1_GPIO_Port, HALL1_Pin) << a);
+	hallStateNew |= (HAL_GPIO_ReadPin(HALL2_GPIO_Port, HALL2_Pin) << b);
+	hallStateNew |= (HAL_GPIO_ReadPin(HALL3_GPIO_Port, HALL3_Pin) << c);
+    } while (hallStateOld != hallStateNew);
+
+    return hallStateNew;
 }
 
 /**
@@ -81,6 +80,7 @@ uint8_t motor_detect_hall_orientation(void) {
 	uint32_t max_spins = 0;
 	uint8_t orientation = 0;
 
+	motor_reset();
 	for (i=0; i <= 5; i++) {
 		flag_timer_10seg = 0;
 		HAL_TIM_Base_Start_IT(&htim3);
@@ -92,7 +92,6 @@ uint8_t motor_detect_hall_orientation(void) {
 		}
 	}
 	motor_reset();
-	drv8301_reset();
 	flag_timer_10seg = 0;
 	return orientation;
 
@@ -114,8 +113,8 @@ uint32_t motor_rotate(uint8_t orientation, uint8_t* exit_flag) {
 
 	while((*exit_flag) == 0){
 		// In case of fault from the driver, turn on the Red led.
-		nFault = !HAL_GPIO_ReadPin(nFAULT_GPIO_Port, nFAULT_Pin);
-		HAL_GPIO_WritePin(LED_R_GPIO_Port, LED_R_Pin, nFault);
+		nFault = HAL_GPIO_ReadPin(nFAULT_GPIO_Port, nFAULT_Pin);
+		HAL_GPIO_WritePin(LED_R_GPIO_Port, LED_R_Pin, !nFault);
 
 		// Read hall and, in case of a transition, turn off all transistors to avoid
 		// short-circuiting two transistors.

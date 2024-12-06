@@ -104,11 +104,6 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	uint8_t a=0, b=0, c=0, d=0;
-	a = drv8301_read_reg(0);
-	b = drv8301_read_reg(1);
-	c = drv8301_read_reg(2);
-	d = drv8301_read_reg(3);
 	  motor_rotate(orientation, &dont_exit);
     /* USER CODE END WHILE */
 
@@ -179,7 +174,7 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 15999;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 1999;
+  htim3.Init.Period = 9999;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -233,15 +228,15 @@ static void MX_GPIO_Init(void)
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, H1_Pin|H2_Pin|H3_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : LED_G_Pin LED_R_Pin EN_GATE_Pin */
-  GPIO_InitStruct.Pin = LED_G_Pin|LED_R_Pin|EN_GATE_Pin;
+  /*Configure GPIO pins : LED_G_Pin LED_R_Pin */
+  GPIO_InitStruct.Pin = LED_G_Pin|LED_R_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
-  /*Configure GPIO pins : L1_Pin L2_Pin L3_Pin */
-  GPIO_InitStruct.Pin = L1_Pin|L2_Pin|L3_Pin;
+  /*Configure GPIO pins : L1_Pin L2_Pin L3_Pin EN_GATE_Pin */
+  GPIO_InitStruct.Pin = L1_Pin|L2_Pin|L3_Pin|EN_GATE_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;

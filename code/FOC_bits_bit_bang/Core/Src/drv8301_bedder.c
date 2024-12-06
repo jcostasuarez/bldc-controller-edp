@@ -11,9 +11,6 @@ static void spi_begin(void);
 static void spi_end(void);
 static void spi_delay(void);
 
-// Private variables
-static char m_fault_print_buffer[120];x;
-
 /**
  * Get the middle value of three values
  *
@@ -43,6 +40,12 @@ int utils_middle_of_3_int(int a, int b, int c) {
 }
 
 void drv8301_init(void) {
+
+	// Cotti Enable driver
+	int rega = -1, regb = -1;
+	rega++; regb++;	// Avoid unused warning
+	HAL_GPIO_WritePin(EN_GATE_GPIO_Port, EN_GATE_Pin, GPIO_PIN_SET);
+
 	HAL_Delay(100);
 
 	// Disable OC
@@ -50,6 +53,19 @@ void drv8301_init(void) {
 	drv8301_write_reg(2, 0x0430);
 
 	drv8301_set_current_amp_gain(CURRENT_AMP_GAIN);
+
+	// Cotti
+	drv8301_read_faults();
+	drv8301_reset_faults();
+
+	drv8301_set_oc_mode(DRV8301_OC_DISABLED);
+
+	// Make sure that the control reg changes before and after writing the register:
+
+	drv8301_set_oc_adj(0);
+	rega = drv8301_read_reg(2);
+	drv8301_set_oc_adj(31);
+	regb = drv8301_read_reg(2);
 }
 
 /**
@@ -183,8 +199,7 @@ static void spi_transfer(uint16_t *in_buf, const uint16_t *out_buf, int length) 
 		uint16_t recieve = 0;
 
 		for (int bit = 0;bit < 16;bit++) {
-			palWritePad(DRV8301_MOSI_GPIO, DRV8301_MOSI_PIN, send >> 15);
-			//HAL_GPIO_WritePin(SPI3_MOSI_GPIO_Port, SPI3_MOSI_Pin, send >> 15);
+			HAL_GPIO_WritePin(SPI3_MOSI_GPIO_Port, SPI3_MOSI_Pin, send >> 15);
 			send <<= 1;
 
 			HAL_GPIO_WritePin(SPI3_SCK_GPIO_Port, SPI3_SCK_Pin, GPIO_PIN_SET);
@@ -193,11 +208,11 @@ static void spi_transfer(uint16_t *in_buf, const uint16_t *out_buf, int length) 
 			HAL_GPIO_WritePin(SPI3_SCK_GPIO_Port, SPI3_SCK_Pin, GPIO_PIN_RESET);
 
 			int r1, r2, r3;
-			r1 = palReadPad(DRV8301_MISO_GPIO, DRV8301_MISO_PIN);
+			r1 = HAL_GPIO_ReadPin(SPI3_MISO_GPIO_Port, SPI3_MISO_Pin);
 			__NOP();
-			r2 = palReadPad(DRV8301_MISO_GPIO, DRV8301_MISO_PIN);
+			r2 = HAL_GPIO_ReadPin(SPI3_MISO_GPIO_Port, SPI3_MISO_Pin);
 			__NOP();
-			r3 = palReadPad(DRV8301_MISO_GPIO, DRV8301_MISO_PIN);
+			r3 = HAL_GPIO_ReadPin(SPI3_MISO_GPIO_Port, SPI3_MISO_Pin);
 
 			recieve <<= 1;
 			if (utils_middle_of_3_int(r1, r2, r3)) {
@@ -228,4 +243,4 @@ static void spi_delay(void) {
 }
 
 
-#endif BEDDER
+#endif // BEDDER

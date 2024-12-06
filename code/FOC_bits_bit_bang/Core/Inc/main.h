@@ -39,6 +39,7 @@ extern "C" {
 extern TIM_HandleTypeDef htim3;
 extern uint8_t flag_timer_10seg;
 #include "drv8301.h"
+#include "drv8301_bedder.h"
 #include "motor_bldc.h"
 
 

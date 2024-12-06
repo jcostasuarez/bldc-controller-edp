@@ -26,7 +26,8 @@ Core/Src/drv8301.o: ../Core/Src/drv8301.c ../Core/Inc/main.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
- ../Core/Inc/drv8301.h ../Core/Inc/motor_bldc.h
+ ../Core/Inc/drv8301.h ../Core/Inc/drv8301_bedder.h ../Core/Inc/main.h \
+ ../Core/Inc/motor_bldc.h
 ../Core/Inc/main.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
 ../Core/Inc/stm32f4xx_hal_conf.h:
@@ -56,4 +57,6 @@ Core/Src/drv8301.o: ../Core/Src/drv8301.c ../Core/Inc/main.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
 ../Core/Inc/drv8301.h:
+../Core/Inc/drv8301_bedder.h:
+../Core/Inc/main.h:
 ../Core/Inc/motor_bldc.h:

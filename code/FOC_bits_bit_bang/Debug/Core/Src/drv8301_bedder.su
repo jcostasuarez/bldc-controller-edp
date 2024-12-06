@@ -1,0 +1,14 @@
+../Core/Src/drv8301_bedder.c:29:5:utils_middle_of_3_int	32	static
+../Core/Src/drv8301_bedder.c:42:6:drv8301_init	16	static
+../Core/Src/drv8301_bedder.c:80:6:drv8301_set_oc_adj	24	static
+../Core/Src/drv8301_bedder.c:93:6:drv8301_set_oc_mode	24	static
+../Core/Src/drv8301_bedder.c:100:6:drv8301_set_current_amp_gain	24	static
+../Core/Src/drv8301_bedder.c:143:5:drv8301_read_faults	16	static
+../Core/Src/drv8301_bedder.c:152:6:drv8301_reset_faults	16	static
+../Core/Src/drv8301_bedder.c:160:14:drv8301_read_reg	24	static
+../Core/Src/drv8301_bedder.c:179:6:drv8301_write_reg	24	static
+../Core/Src/drv8301_bedder.c:190:17:spi_exchange	24	static
+../Core/Src/drv8301_bedder.c:196:13:spi_transfer	48	static,ignoring_inline_asm
+../Core/Src/drv8301_bedder.c:231:13:spi_begin	8	static
+../Core/Src/drv8301_bedder.c:235:13:spi_end	8	static
+../Core/Src/drv8301_bedder.c:239:13:spi_delay	16	static,ignoring_inline_asm
