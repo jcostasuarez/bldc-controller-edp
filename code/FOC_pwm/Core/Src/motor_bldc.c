@@ -134,43 +134,43 @@ uint32_t motor_rotate(uint8_t orientation, uint8_t* exit_flag) {
 		// Turn on the transistors according to the HALL Sensors
 		switch(hall_state) {
 			case HALL_STATE_A:
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
+				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
+				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 				//HAL_GPIO_WritePin(H2_GPIO_Port, H2_Pin, GPIO_PIN_SET);
 				//HAL_GPIO_WritePin(L3_GPIO_Port, L3_Pin, GPIO_PIN_SET);
 			break;
 
 			case HALL_STATE_B:
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
+				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 				//HAL_GPIO_WritePin(H2_GPIO_Port, H2_Pin, GPIO_PIN_SET);
 				//HAL_GPIO_WritePin(L1_GPIO_Port, L1_Pin, GPIO_PIN_SET);
 			break;
 
 			case HALL_STATE_C:
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
+				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 				//HAL_GPIO_WritePin(H3_GPIO_Port, H3_Pin, GPIO_PIN_SET);
 				//HAL_GPIO_WritePin(L1_GPIO_Port, L1_Pin, GPIO_PIN_SET);
 			break;
 
 			case HALL_STATE_D:
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
+				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
+				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
 				//HAL_GPIO_WritePin(H3_GPIO_Port, H3_Pin, GPIO_PIN_SET);
 				//HAL_GPIO_WritePin(L2_GPIO_Port, L2_Pin, GPIO_PIN_SET);
 			break;
 
 			case HALL_STATE_E:
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
+				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
 				//HAL_GPIO_WritePin(H1_GPIO_Port, H1_Pin, GPIO_PIN_SET);
 				//HAL_GPIO_WritePin(L2_GPIO_Port, L2_Pin, GPIO_PIN_SET);
 			break;
 
 			case HALL_STATE_F:
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
+				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
 				//HAL_GPIO_WritePin(H1_GPIO_Port, H1_Pin, GPIO_PIN_SET);
 				//HAL_GPIO_WritePin(L3_GPIO_Port, L3_Pin, GPIO_PIN_SET);
 			break;

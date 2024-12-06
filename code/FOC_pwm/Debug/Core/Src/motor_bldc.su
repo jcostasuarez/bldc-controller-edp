@@ -1,4 +1,4 @@
 ../Core/Src/motor_bldc.c:17:9:motor_read_hall	24	static
 ../Core/Src/motor_bldc.c:64:6:motor_reset	8	static
-../Core/Src/motor_bldc.c:78:9:motor_detect_hall_orientation	24	static
-../Core/Src/motor_bldc.c:106:10:motor_rotate	32	static
+../Core/Src/motor_bldc.c:81:9:motor_detect_hall_orientation	24	static
+../Core/Src/motor_bldc.c:109:10:motor_rotate	32	static
