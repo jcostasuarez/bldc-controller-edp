@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;FOC_pwm/FOC_bits_3.ioc&apos; to &apos;FOC_pwm.ioc&apos;" description="Rename resource &apos;FOC_bits_3.ioc&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="FOC_bits_3.ioc" name="FOC_pwm.ioc" stamp="1733378000286" updateReferences="true"/>
-</session>

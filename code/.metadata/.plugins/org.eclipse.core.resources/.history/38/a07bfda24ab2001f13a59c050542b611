@@ -1,7 +1,0 @@
-//void drv8301_init(void) {
-//	  // Disable OC (OverCurrent protection)
-//	  drv8301_write_reg(2, 0x0430);
-//	  drv8301_write_reg(2, 0x0430);
-//
-//	  drv8301_set_current_amp_gain(20);
-//}
