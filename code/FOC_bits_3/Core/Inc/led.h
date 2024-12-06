@@ -3,7 +3,6 @@
 
 #include "stm32f4xx_hal.h"  // Asegúrate de incluir el archivo de cabecera adecuado para tu microcontrolador
 
-
 #define ROJO 0
 #define VERDE 1
 
