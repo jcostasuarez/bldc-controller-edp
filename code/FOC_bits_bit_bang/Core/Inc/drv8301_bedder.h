@@ -25,7 +25,7 @@ void drv8301_write_reg(int reg, int data);
 void drv8301_set_current_amp_gain(int gain);
 int utils_middle_of_3_int(int a, int b, int c);
 
-#define CURRENT_AMP_GAIN 20
+#define CURRENT_AMP_GAIN 10
 
 #define HW_RESET_DRV_FAULTS()		drv8301_reset_faults()
 

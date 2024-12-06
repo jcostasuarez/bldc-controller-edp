@@ -48,6 +48,10 @@ void drv8301_init(void) {
 
 	HAL_Delay(100);
 
+	int fault = drv8301_read_faults();
+	drv8301_reset_faults();
+	fault = drv8301_read_faults();
+
 	// Disable OC
 	drv8301_write_reg(2, 0x0430);
 	drv8301_write_reg(2, 0x0430);
@@ -55,17 +59,20 @@ void drv8301_init(void) {
 	drv8301_set_current_amp_gain(CURRENT_AMP_GAIN);
 
 	// Cotti
-	drv8301_read_faults();
-	drv8301_reset_faults();
 
-	drv8301_set_oc_mode(DRV8301_OC_DISABLED);
+
+	drv8301_set_oc_mode(DRV8301_OC_REPORT_ONLY);
+
+	fault = drv8301_read_faults();
+	drv8301_reset_faults();
+	fault = drv8301_read_faults();
 
 	// Make sure that the control reg changes before and after writing the register:
 
-	drv8301_set_oc_adj(0);
-	rega = drv8301_read_reg(2);
 	drv8301_set_oc_adj(31);
-	regb = drv8301_read_reg(2);
+	//rega = drv8301_read_reg(2);
+	//drv8301_set_oc_adj(0);
+	//regb = drv8301_read_reg(2);
 }
 
 /**
@@ -150,10 +157,19 @@ int drv8301_read_faults(void) {
  * Reset all latched faults.
  */
 void drv8301_reset_faults(void) {
+
+	HAL_GPIO_WritePin(EN_GATE_GPIO_Port, EN_GATE_Pin, GPIO_PIN_RESET);
+
+	HAL_Delay(100);
+
+	HAL_GPIO_WritePin(EN_GATE_GPIO_Port, EN_GATE_Pin, GPIO_PIN_SET);
+
 	int reg = drv8301_read_reg(2);
 	reg |= 1 << 2;
 	drv8301_write_reg(2, reg);
 	drv8301_set_current_amp_gain(CURRENT_AMP_GAIN);
+
+
 }
 
 

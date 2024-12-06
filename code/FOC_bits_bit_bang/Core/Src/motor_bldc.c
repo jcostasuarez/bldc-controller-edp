@@ -90,9 +90,20 @@ uint8_t motor_detect_hall_orientation(void) {
 			orientation = i;
 			max_spins = spins;
 		}
+	motor_reset();
+	int faults = drv8301_read_faults();
+	drv8301_reset_faults();
+	faults = drv8301_read_faults();
+	drv8301_reset_faults();
+	faults = drv8301_read_faults();
+	drv8301_reset_faults();
+	faults = drv8301_read_faults();
+	flag_timer_10seg = 0;
+
+
 	}
 	motor_reset();
-	flag_timer_10seg = 0;
+
 	return orientation;
 
 }
@@ -113,6 +124,10 @@ uint32_t motor_rotate(uint8_t orientation, uint8_t* exit_flag) {
 
 	while((*exit_flag) == 0){
 		// In case of fault from the driver, turn on the Red led.
+		int faults = drv8301_read_faults();
+		drv8301_reset_faults();
+		faults = drv8301_read_faults();
+
 		nFault = HAL_GPIO_ReadPin(nFAULT_GPIO_Port, nFAULT_Pin);
 		HAL_GPIO_WritePin(LED_R_GPIO_Port, LED_R_Pin, !nFault);
 

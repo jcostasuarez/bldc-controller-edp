@@ -31,7 +31,6 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-extern SPI_HandleTypeDef hspi3;
 extern TIM_HandleTypeDef htim3;
 extern TIM_HandleTypeDef htim1;
 extern uint8_t flag_timer_10seg;
@@ -77,8 +76,14 @@ void Error_Handler(void);
 #define HALL3_GPIO_Port GPIOC
 #define SPI3_CS_Pin GPIO_PIN_9
 #define SPI3_CS_GPIO_Port GPIOC
-#define EN_DRV_Pin GPIO_PIN_5
-#define EN_DRV_GPIO_Port GPIOB
+#define SPI3_SCK_Pin GPIO_PIN_10
+#define SPI3_SCK_GPIO_Port GPIOC
+#define SPI3_MISO_Pin GPIO_PIN_11
+#define SPI3_MISO_GPIO_Port GPIOC
+#define SPI3_MOSI_Pin GPIO_PIN_12
+#define SPI3_MOSI_GPIO_Port GPIOC
+#define EN_GATE_Pin GPIO_PIN_5
+#define EN_GATE_GPIO_Port GPIOB
 #define nFAULT_Pin GPIO_PIN_7
 #define nFAULT_GPIO_Port GPIOB
 

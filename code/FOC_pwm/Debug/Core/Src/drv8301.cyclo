@@ -1,3 +1,14 @@
-../Core/Src/drv8301.c:3:6:drv8301_init	3
-../Core/Src/drv8301.c:16:6:drv8301_write_reg	1
-../Core/Src/drv8301.c:26:10:drv8301_read_reg	2
+../Core/Src/drv8301.c:25:5:utils_middle_of_3_int	5
+../Core/Src/drv8301.c:38:6:drv8301_init	1
+../Core/Src/drv8301.c:83:6:drv8301_set_oc_adj	1
+../Core/Src/drv8301.c:96:6:drv8301_set_oc_mode	1
+../Core/Src/drv8301.c:103:6:drv8301_set_current_amp_gain	7
+../Core/Src/drv8301.c:146:5:drv8301_read_faults	1
+../Core/Src/drv8301.c:155:6:drv8301_reset_faults	1
+../Core/Src/drv8301.c:172:14:drv8301_read_reg	2
+../Core/Src/drv8301.c:191:6:drv8301_write_reg	1
+../Core/Src/drv8301.c:202:17:spi_exchange	1
+../Core/Src/drv8301.c:208:13:spi_transfer	6
+../Core/Src/drv8301.c:243:13:spi_begin	1
+../Core/Src/drv8301.c:247:13:spi_end	1
+../Core/Src/drv8301.c:251:13:spi_delay	2
