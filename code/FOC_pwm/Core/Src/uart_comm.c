@@ -52,7 +52,7 @@ uint8_t comm_parse_command(uint8_t command) {
 		}
 
 		case CMD_GET_SPEED: {
-			uart_write(motor_get_speed_rpm(), 4);
+			uart_write(motor_get_speed_rpm(), 1);
 			break;
 		}
 
