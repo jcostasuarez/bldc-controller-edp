@@ -87,9 +87,9 @@ uint8_t motor_get_hall(void) {
 void motor_on_off(uint8_t on) {
 	if (on == 1) {
 		g_on_off = 1;
-		TIM1->CCR1 = g_duty*8;
-		TIM1->CCR2 = g_duty*8;
-		TIM1->CCR3 = g_duty*8;
+		TIM1->CCR1 = g_duty;
+		TIM1->CCR2 = g_duty;
+		TIM1->CCR3 = g_duty;
 	} else {
 		g_on_off = 0;
 	}
@@ -155,9 +155,9 @@ void motor_set_duty(uint32_t duty) {
 		g_duty = 0;
 	}
 
-	TIM1->CCR1 = g_duty*8;
-	TIM1->CCR2 = g_duty*8;
-	TIM1->CCR3 = g_duty*8;
+	TIM1->CCR1 = g_duty;
+	TIM1->CCR2 = g_duty;
+	TIM1->CCR3 = g_duty;
 }
 
 void motor_init(void) {
