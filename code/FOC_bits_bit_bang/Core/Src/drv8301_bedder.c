@@ -48,10 +48,6 @@ void drv8301_init(void) {
 
 	HAL_Delay(100);
 
-	int fault = drv8301_read_faults();
-	drv8301_reset_faults();
-	fault = drv8301_read_faults();
-
 	// Disable OC
 	drv8301_write_reg(2, 0x0430);
 	drv8301_write_reg(2, 0x0430);
@@ -62,10 +58,7 @@ void drv8301_init(void) {
 
 
 	drv8301_set_oc_mode(DRV8301_OC_REPORT_ONLY);
-
-	fault = drv8301_read_faults();
 	drv8301_reset_faults();
-	fault = drv8301_read_faults();
 
 	// Make sure that the control reg changes before and after writing the register:
 

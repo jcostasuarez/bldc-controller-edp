@@ -1,4 +1,11 @@
-../Core/Src/motor_bldc.c:17:9:motor_read_hall	7
-../Core/Src/motor_bldc.c:64:6:motor_reset	1
-../Core/Src/motor_bldc.c:78:9:motor_detect_hall_orientation	3
-../Core/Src/motor_bldc.c:106:10:motor_rotate	11
+../Core/Src/motor_bldc.c:32:9:motor_read_hall	7
+../Core/Src/motor_bldc.c:80:9:motor_get_hall	1
+../Core/Src/motor_bldc.c:87:6:motor_on_off	2
+../Core/Src/motor_bldc.c:101:6:motor_reset	1
+../Core/Src/motor_bldc.c:115:9:motor_detect_hall_orientation	3
+../Core/Src/motor_bldc.c:138:6:motor_set_speed	2
+../Core/Src/motor_bldc.c:147:6:motor_set_duty	6
+../Core/Src/motor_bldc.c:163:6:motor_init	1
+../Core/Src/motor_bldc.c:170:6:motor_calculate_speed	1
+../Core/Src/motor_bldc.c:182:9:motor_get_speed_rpm	1
+../Core/Src/motor_bldc.c:194:6:motor_rotate	11

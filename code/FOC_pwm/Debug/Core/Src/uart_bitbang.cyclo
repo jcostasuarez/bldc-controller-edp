@@ -1,0 +1,7 @@
+../Core/Src/uart_bitbang.c:23:6:uart_init	1
+../Core/Src/uart_bitbang.c:32:9:uart_is_empty	1
+../Core/Src/uart_bitbang.c:39:9:uart_read	3
+../Core/Src/uart_bitbang.c:53:6:uart_write	2
+../Core/Src/uart_bitbang.c:69:6:uart_start_received	2
+../Core/Src/uart_bitbang.c:84:6:uart_write_next_bit	4
+../Core/Src/uart_bitbang.c:110:6:uart_read_next_bit	5

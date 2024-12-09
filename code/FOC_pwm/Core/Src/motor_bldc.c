@@ -7,6 +7,21 @@
 #include "main.h"
 #include "motor_bldc.h"
 
+static uint8_t g_hall = 0;
+static uint8_t g_on_off = 0;
+static float g_spins = 0;
+
+// Duty = 800 -> 100%
+static int32_t g_duty = 0;
+static uint8_t g_speed_rpm = 0;
+static uint8_t g_desired_speed_rpm = 0;
+
+// Delta duty is the amount that the duty will be increased or decreased to reach
+// the desired speed. This value is divided by two each time, until the speed is
+// estabilized
+static int32_t g_delta_duty = 0;
+
+
 /**
  * @brief: Read Hall sensors
  * @arg: orientation. The order of the HALL sensors.
@@ -55,7 +70,29 @@ uint8_t motor_read_hall(uint8_t orientation) {
 		break;
     }
 
+    g_hall = hallState;
     return hallState;
+}
+
+/**
+ * @brief: Return state of hall sensors
+ */
+uint8_t motor_get_hall(void) {
+	return g_hall;
+}
+
+/**
+ * @brief: Turn motor on or off
+ */
+void motor_on_off(uint8_t on) {
+	if (on == 1) {
+		g_on_off = 1;
+		TIM1->CCR1 = g_duty*8;
+		TIM1->CCR2 = g_duty*8;
+		TIM1->CCR3 = g_duty*8;
+	} else {
+		g_on_off = 0;
+	}
 }
 
 /**
@@ -82,17 +119,68 @@ uint8_t motor_detect_hall_orientation(void) {
 	uint8_t orientation = 0;
 
 	for (i=0; i <= 5; i++) {
-		flag_timer_10seg = 0;
+		//flag_timer_10seg = 0;
 		HAL_TIM_Base_Start_IT(&htim3);
-		spins = motor_rotate(i, &flag_timer_10seg);
+		//spins = motor_rotate(i, &flag_timer_10seg, 25);
 
 		if (spins > max_spins) {
 			orientation = i;
 			max_spins = spins;
 		}
 	}
-	flag_timer_10seg = 0;
+	//flag_timer_10seg = 0;
 	return orientation;
+}
+
+/**
+ * @brief: Set motor speed
+ */
+void motor_set_speed(uint8_t desired_speed_rpm) {
+	g_desired_speed_rpm = desired_speed_rpm;
+	if (desired_speed_rpm > g_speed_rpm) {
+		g_delta_duty = 32;
+	} else {
+		g_delta_duty = -32;
+	}
+}
+
+void motor_set_duty(uint32_t duty) {
+	if ((g_speed_rpm > g_desired_speed_rpm && g_delta_duty > 0) ||
+		(g_speed_rpm < g_desired_speed_rpm && g_delta_duty < 0)) {
+		g_delta_duty = -g_delta_duty/2;
+	}
+
+	g_duty += g_delta_duty;
+	if (g_duty < 0) {
+		g_duty = 0;
+	}
+
+	TIM1->CCR1 = g_duty*8;
+	TIM1->CCR2 = g_duty*8;
+	TIM1->CCR3 = g_duty*8;
+}
+
+void motor_init(void) {
+	motor_set_duty(g_duty);
+
+	// Start 5 seconds timer to calculate speed
+	HAL_TIM_Base_Start_IT(&htim3);
+}
+
+void motor_calculate_speed(void) {
+	// Each spin is equal to 60° / Poles
+	float spins_per_minute = g_spins * 60;	// This function is called each second
+	float erpm = spins_per_minute / 6;	// Each spin is 60°, 6 spins is one ERPM
+	g_speed_rpm = (int32_t) (1000*erpm / MOTOR_POLES);
+
+	// Apply control
+	motor_set_duty(g_duty);
+
+	g_spins = 0;
+}
+
+uint8_t motor_get_speed_rpm(void) {
+	return g_speed_rpm;
 }
 
 /**
@@ -103,82 +191,70 @@ uint8_t motor_detect_hall_orientation(void) {
  * @arg: exit_flag. Pointer to a value, that should be "1" to exit this function.
  * @return number of "spins", given by the amount of hall sensors' shifts.
  */
-uint32_t motor_rotate(uint8_t orientation, uint8_t* exit_flag) {
-	uint8_t nFault = 0;
-	uint8_t hall_state = 0;
-	uint8_t previous_hall_state = 0;
-	uint32_t spins = 0;
+void motor_rotate(uint8_t orientation) {
+	uint8_t hall_state = motor_read_hall(orientation);
+	static uint8_t previous_hall_state = 0;
 
-	// PWM duty cycle is 100% == 800;
-	TIM1->CCR1 = 200;
-	TIM1->CCR2 = 200;
-	TIM1->CCR3 = 200;
-
-	while((*exit_flag) == 0){
-		// In case of fault from the driver, turn on the Red led.
-		nFault = !HAL_GPIO_ReadPin(nFAULT_GPIO_Port, nFAULT_Pin);
-		HAL_GPIO_WritePin(LED_R_GPIO_Port, LED_R_Pin, nFault);
-
-		// Read hall and, in case of a transition, turn off all transistors to avoid
-		// short-circuiting two transistors.
-		hall_state = motor_read_hall(orientation);
-		if (previous_hall_state != hall_state && hall_state != 0 && hall_state != 7) {
-			motor_reset();
-			previous_hall_state = hall_state;
-			spins++;
-		}
-
-		// Turn on the transistors according to the HALL Sensors
-		switch(hall_state) {
-			case HALL_STATE_A:
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
-				//HAL_GPIO_WritePin(H2_GPIO_Port, H2_Pin, GPIO_PIN_SET);
-				//HAL_GPIO_WritePin(L3_GPIO_Port, L3_Pin, GPIO_PIN_SET);
-			break;
-
-			case HALL_STATE_B:
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-				//HAL_GPIO_WritePin(H2_GPIO_Port, H2_Pin, GPIO_PIN_SET);
-				//HAL_GPIO_WritePin(L1_GPIO_Port, L1_Pin, GPIO_PIN_SET);
-			break;
-
-			case HALL_STATE_C:
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-				//HAL_GPIO_WritePin(H3_GPIO_Port, H3_Pin, GPIO_PIN_SET);
-				//HAL_GPIO_WritePin(L1_GPIO_Port, L1_Pin, GPIO_PIN_SET);
-			break;
-
-			case HALL_STATE_D:
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
-				//HAL_GPIO_WritePin(H3_GPIO_Port, H3_Pin, GPIO_PIN_SET);
-				//HAL_GPIO_WritePin(L2_GPIO_Port, L2_Pin, GPIO_PIN_SET);
-			break;
-
-			case HALL_STATE_E:
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
-				//HAL_GPIO_WritePin(H1_GPIO_Port, H1_Pin, GPIO_PIN_SET);
-				//HAL_GPIO_WritePin(L2_GPIO_Port, L2_Pin, GPIO_PIN_SET);
-			break;
-
-			case HALL_STATE_F:
-				HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
-				HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
-				//HAL_GPIO_WritePin(H1_GPIO_Port, H1_Pin, GPIO_PIN_SET);
-				//HAL_GPIO_WritePin(L3_GPIO_Port, L3_Pin, GPIO_PIN_SET);
-			break;
-
-			default:
-				//motor_reset();
-			break;
-		}
+	// Motor is turned off
+	if (!g_on_off) {
+		return;
 	}
 
-	motor_reset();
-	return spins;
+	// Read hall and, in case of a transition, turn off all transistors to avoid
+	// short-circuiting two transistors.
+	if (previous_hall_state != hall_state && hall_state != 0 && hall_state != 7) {
+		previous_hall_state = hall_state;
+		g_spins++;
+		motor_reset();
+	}
+
+	// Turn on the transistors according to the HALL Sensors
+	switch(hall_state) {
+		case HALL_STATE_A:
+			HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
+			HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+			//HAL_GPIO_WritePin(H2_GPIO_Port, H2_Pin, GPIO_PIN_SET);
+			//HAL_GPIO_WritePin(L3_GPIO_Port, L3_Pin, GPIO_PIN_SET);
+		break;
+
+		case HALL_STATE_B:
+			HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_2);
+			HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+			//HAL_GPIO_WritePin(H2_GPIO_Port, H2_Pin, GPIO_PIN_SET);
+			//HAL_GPIO_WritePin(L1_GPIO_Port, L1_Pin, GPIO_PIN_SET);
+		break;
+
+		case HALL_STATE_C:
+			HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
+			HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+			//HAL_GPIO_WritePin(H3_GPIO_Port, H3_Pin, GPIO_PIN_SET);
+			//HAL_GPIO_WritePin(L1_GPIO_Port, L1_Pin, GPIO_PIN_SET);
+		break;
+
+		case HALL_STATE_D:
+			HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_3);
+			HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+			//HAL_GPIO_WritePin(H3_GPIO_Port, H3_Pin, GPIO_PIN_SET);
+			//HAL_GPIO_WritePin(L2_GPIO_Port, L2_Pin, GPIO_PIN_SET);
+		break;
+
+		case HALL_STATE_E:
+			HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+			HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+			//HAL_GPIO_WritePin(H1_GPIO_Port, H1_Pin, GPIO_PIN_SET);
+			//HAL_GPIO_WritePin(L2_GPIO_Port, L2_Pin, GPIO_PIN_SET);
+		break;
+
+		case HALL_STATE_F:
+			HAL_TIMEx_PWMN_Start(&htim1, TIM_CHANNEL_1);
+			HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+			//HAL_GPIO_WritePin(H1_GPIO_Port, H1_Pin, GPIO_PIN_SET);
+			//HAL_GPIO_WritePin(L3_GPIO_Port, L3_Pin, GPIO_PIN_SET);
+		break;
+
+		default:
+			//motor_reset();
+		break;
+	}
 }
 

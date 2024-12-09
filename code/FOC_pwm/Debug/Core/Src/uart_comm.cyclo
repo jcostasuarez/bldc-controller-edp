@@ -1,0 +1,15 @@
+../Core/Src/uart_comm.c:6:6:comm	6
+../Core/Src/uart_comm.c:31:9:comm_parse_command	15
+../Core/Src/uart_comm.c:125:9:calculate_voltage	1
+../Core/Src/uart_comm.c:135:9:get_voltage_1	1
+../Core/Src/uart_comm.c:139:9:get_voltage_2	1
+../Core/Src/uart_comm.c:143:9:get_voltage_3	1
+../Core/Src/uart_comm.c:147:9:get_voltage_supply	1
+../Core/Src/uart_comm.c:155:9:calculate_phase_current	1
+../Core/Src/uart_comm.c:168:9:get_current_phase_1	1
+../Core/Src/uart_comm.c:175:9:get_current_phase_2	1
+../Core/Src/uart_comm.c:182:9:get_current_phase_3	1
+../Core/Src/uart_comm.c:191:7:adc_to_resistance	1
+../Core/Src/uart_comm.c:197:9:calculate_temperature_ntc	1
+../Core/Src/uart_comm.c:204:9:get_temp_motor	1
+../Core/Src/uart_comm.c:212:9:get_temp_adc	1

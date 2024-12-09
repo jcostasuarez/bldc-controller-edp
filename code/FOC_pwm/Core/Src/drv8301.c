@@ -36,39 +36,17 @@ int utils_middle_of_3_int(int a, int b, int c) {
 }
 
 void drv8301_init(void) {
-
-	// Cotti Enable driver
-	int rega = -1, regb = -1;
-	rega++; regb++;	// Avoid unused warning
 	HAL_GPIO_WritePin(EN_GATE_GPIO_Port, EN_GATE_Pin, GPIO_PIN_SET);
 
 	HAL_Delay(100);
 
-	int fault = drv8301_read_faults();
 	drv8301_reset_faults();
-	fault = drv8301_read_faults();
 
 	// Disable OC
 	drv8301_write_reg(2, 0x0430);
 	drv8301_write_reg(2, 0x0430);
 
 	drv8301_set_current_amp_gain(CURRENT_AMP_GAIN);
-
-	// Cotti
-
-
-	drv8301_set_oc_mode(DRV8301_OC_REPORT_ONLY);
-
-	fault = drv8301_read_faults();
-	drv8301_reset_faults();
-	fault = drv8301_read_faults();
-
-	// Make sure that the control reg changes before and after writing the register:
-
-	drv8301_set_oc_adj(31);
-	rega = drv8301_read_reg(2);
-	drv8301_set_oc_adj(0);
-	regb = drv8301_read_reg(2);
 }
 
 /**
