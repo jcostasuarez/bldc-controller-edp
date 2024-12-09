@@ -155,6 +155,10 @@ void motor_set_duty(uint32_t duty) {
 		g_duty = 0;
 	}
 
+	if (g_duty > 600) {
+		g_duty = 600;
+	}
+
 	TIM1->CCR1 = g_duty;
 	TIM1->CCR2 = g_duty;
 	TIM1->CCR3 = g_duty;
@@ -174,7 +178,9 @@ void motor_calculate_speed(void) {
 	g_speed_rpm = (int32_t) (1000*erpm / MOTOR_POLES);
 
 	// Apply control
-	motor_set_duty(g_duty);
+	if (g_on_off) {
+		motor_set_duty(g_duty);
+	}
 
 	g_spins = 0;
 }
