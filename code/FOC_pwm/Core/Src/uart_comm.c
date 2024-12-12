@@ -5,24 +5,34 @@
  */
 void comm(void) {
 	static uint8_t state = ST_WAIT_FOR_CMD;
+	uint8_t value = 0;
 
 	if(uart_is_empty()) {
 		return;
 	}
 
+	value = uart_read();
+
+	if (value == 255) {
+		return;
+	}
+
 	switch(state) {
 		case ST_WAIT_FOR_CMD: {
-			state = comm_parse_command(uart_read());
+			state = comm_parse_command(value);
 			break;
 		}
 		case ST_WAIT_FOR_ON_OFF: {
-			motor_on_off(uart_read());
+			motor_on_off(value);
 			state = ST_WAIT_FOR_CMD;
+			uart_write(value, 1);
 			break;
 		}
 		case ST_WAIT_FOR_SPEED: {
-			motor_set_speed(uart_read());
+			//motor_set_speed(value);
+			motor_set_duty(value*8);
 			state = ST_WAIT_FOR_CMD;
+			uart_write(value, 1);
 			break;
 		}
 	}
@@ -62,7 +72,8 @@ uint8_t comm_parse_command(uint8_t command) {
 		}
 
 		case CMD_GET_C2: {
-			uart_write(get_current_phase_2(), 4);
+			//uart_write(get_current_phase_2(), 4);
+			uart_write(motor_get_duty(), 4);
 			break;
 		}
 

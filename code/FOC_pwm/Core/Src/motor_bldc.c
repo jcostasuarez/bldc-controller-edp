@@ -12,8 +12,10 @@ static uint8_t g_on_off = 0;
 static float g_spins = 0;
 
 // Duty = 800 -> 100%
-static int32_t g_duty = 0;
-static uint8_t g_speed_rpm = 0;
+static int32_t g_duty = 8;
+static uint32_t g_speed_filter_rpm[10];
+static uint8_t g_speed_filter_pos = 0;
+static uint32_t g_speed_rpm = 0;
 static uint8_t g_desired_speed_rpm = 0;
 
 // Delta duty is the amount that the duty will be increased or decreased to reach
@@ -74,6 +76,10 @@ uint8_t motor_read_hall(uint8_t orientation) {
     return hallState;
 }
 
+int32_t motor_get_duty(void) {
+	return g_duty;
+}
+
 /**
  * @brief: Return state of hall sensors
  */
@@ -87,9 +93,11 @@ uint8_t motor_get_hall(void) {
 void motor_on_off(uint8_t on) {
 	if (on == 1) {
 		g_on_off = 1;
+		g_duty = 8; // Default value, to make sure a smooth start_up is made
 		TIM1->CCR1 = g_duty;
 		TIM1->CCR2 = g_duty;
 		TIM1->CCR3 = g_duty;
+		drv8301_init();
 	} else {
 		g_on_off = 0;
 	}
@@ -145,23 +153,25 @@ void motor_set_speed(uint8_t desired_speed_rpm) {
 }
 
 void motor_set_duty(uint32_t duty) {
-	if ((g_speed_rpm > g_desired_speed_rpm && g_delta_duty > 0) ||
-		(g_speed_rpm < g_desired_speed_rpm && g_delta_duty < 0)) {
-		g_delta_duty = -g_delta_duty/2;
+//	if ((g_speed_rpm > g_desired_speed_rpm && g_delta_duty > 0) ||
+//		(g_speed_rpm < g_desired_speed_rpm && g_delta_duty < 0)) {
+//		g_delta_duty = -g_delta_duty/2;
+//	}
+//
+//	g_duty += g_delta_duty;
+//	if (g_duty < 8) {
+//		g_duty = 8;
+//	}
+//
+//	if (g_duty > 600) {
+//		g_duty = 600;
+//	}
+	if (g_on_off) {
+		g_duty = duty;
+		TIM1->CCR1 = g_duty;
+		TIM1->CCR2 = g_duty;
+		TIM1->CCR3 = g_duty;
 	}
-
-	g_duty += g_delta_duty;
-	if (g_duty < 0) {
-		g_duty = 0;
-	}
-
-	if (g_duty > 600) {
-		g_duty = 600;
-	}
-
-	TIM1->CCR1 = g_duty;
-	TIM1->CCR2 = g_duty;
-	TIM1->CCR3 = g_duty;
 }
 
 void motor_init(void) {
@@ -173,9 +183,19 @@ void motor_init(void) {
 
 void motor_calculate_speed(void) {
 	// Each spin is equal to 60° / Poles
-	float spins_per_minute = g_spins * 60;	// This function is called each second
+	float spins_per_minute = g_spins * 60;	// This function is called each 1 seconds
 	float erpm = spins_per_minute / 6;	// Each spin is 60°, 6 spins is one ERPM
-	g_speed_rpm = (int32_t) (1000*erpm / MOTOR_POLES);
+	g_speed_filter_rpm[g_speed_filter_pos] = (int32_t) (100*erpm / MOTOR_POLES); // Multiply by 100 instead of 1000. This value is divided by 10 because of the filter.
+
+//	g_speed_rpm += g_speed_filter_rpm[g_speed_filter_pos];
+//
+//	g_speed_filter_pos++;
+//	if (g_speed_filter_pos == 10) {
+//		g_speed_filter_pos = 0;
+//	}
+//
+//	g_speed_rpm -= g_speed_filter_rpm[g_speed_filter_pos];
+
 
 	// Apply control
 	if (g_on_off) {
@@ -188,6 +208,8 @@ void motor_calculate_speed(void) {
 uint8_t motor_get_speed_rpm(void) {
 	return g_speed_rpm;
 }
+
+
 
 /**
  * @brief: Rotates the motor. The rotation speed is given by the voltage applied to the motor,
@@ -203,6 +225,7 @@ void motor_rotate(uint8_t orientation) {
 
 	// Motor is turned off
 	if (!g_on_off) {
+		motor_reset();
 		return;
 	}
 

@@ -20,6 +20,7 @@ uint8_t motor_get_hall(void);
 void motor_set_speed(uint8_t desired_speed_rpm);
 void motor_set_duty(uint32_t duty);
 uint8_t motor_get_speed_rpm(void);
+int32_t motor_get_duty(void);
 
 #define HALL_STATE_A 0b101
 #define HALL_STATE_B 0b100
